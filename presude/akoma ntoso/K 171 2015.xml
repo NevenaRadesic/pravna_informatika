@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        OSNOVNI SUD U HERCEG NOVOM
+                    </FRBRauthor>
+                    <FRBRdate date="2016-03-16">
+                        2016-03-16
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 171/15
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CRNA GORA
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.HercegNovi" showAs="Osnovni sud u Herceg Novom" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.HercegNovi" showAs="ODT Herceg Novi" />
+                <TLCPerson eId="blekovic" href="/ontology/person/blekovic" showAs="Leković Branislav" />
+                <TLCPerson eId="tmilovic" href="/ontology/person/tmilovic" showAs="Milović Tereza" />
+                <TLCPerson eId="sm" href="/ontology/person/sm" showAs="S.M."/>
+                <TLCPerson eId="rstijovic" href="/ontology/person/rstijovic" showAs="Stijović Rista" />
+                <TLCPerson eId="pj" href="/ontology/person/pj" showAs="P.J." />
+                <TLCPerson eId="bz" href="/ontology/person/bz" showAs="B.Z." />
+                <TLCPerson eId="rd" href="/ontology/person/rd" showAs="R.D." />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+                <TLCRole eId="injuredParty" href="/ontology/role/injuredParty" showAs="Injured Party" />
+
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    OSNOVNI SUD U HERCEG NOVOM
+                </organization>
+                , po sudiji
+                <party id="blekovic" refersTo="#blekovic" as="#judge">
+                    Leković Branislavu
+                </party>
+                , uz učešće zapisničara
+                <party id="tmilovic" refersTo="#tmilovic" as="#clerk">
+                    Milović Tereze
+                </party>
+                , u krivičnom predmetu protiv okrivljenog
+                <party id="sm" refersTo="#sm" as="#defendant">
+                    Š.M.
+                </party>
+                , zbog krivičnog djela iz
+                <ref href="/krivicni#art_258">
+                    čl. 258 st.2 KZ CG
+                </ref>
+                povodom optužnice
+                <organization id="odt" refersTo="#odt">
+                    ODT Herceg Novi
+                </organization>
+                , Kt.br. 212/2015 od 01.12.2015. godine, nakon održanog javnog glavnog pretresa, dana
+                16.03.2016. godine, u prisustvu državnog tužioca
+                <party id="rstijovic" refersTo="#rstijovic" as="#prosecutor">
+                    ODT Herceg Novi Stijović Rista
+                </party>
+                , okrivljenog
+                <party id="sm" refersTo="#sm" as="#defendant">
+                    Š.M.
+                </party>
+                i njegovog branioca advokata
+                <party id="pj" refersTo="#pj" as="#lawyer">
+                    P.J.
+                </party>
+                , po zamjeničkom punomoćju advokata
+                <party id="bz" refersTo="#bz" as="#lawyer">
+                    B.Z.
+                </party>
+                , donio je i istog dana javno objavio sljedeću
+                P R E S U D U
+                Okrivljeni
+                <party id="sm" refersTo="#sm" as="#defendant">
+                    Š.M.
+                </party>
+                
+                , JMBG ..., od oca U. i majke S., rođ. D., rođen .... godine u P., sa prebivalištem u P., na adresi ...,
+                pismen, sa završenom sss, po zanimanju konobar, nezaposlen, neoženjen, bez djece, državljanina Crne Gore,
+                neosuđivan.
+                K R I V J E
+                Što je :
+                Dana 04. i 05. avgusta 2015. godine u Herceg Novom, u više navrata stavio i pokušao da stavi u opticaj
+                falsifikovane novčanice u apoenima od 100 eura, na način da je dana 04. avgusta 2015. godine u večernjim
+                časovima na šetalištu u Igalu na četiri štanda za prodaju sladoleda i sokova, koji pripadaju preduzetniku 
+                <party id="rd" refersTo="#rd" as="#injuredParty">
+                    R.D.
+                </party>
+                iz Herceg Novog, u opticaj stavio ukupno 4 falsifikovane novčanice u apoenima od po 100 eura,od kojih su tri
+                imale serijski broj X21263392991 i jedna serijski broj X17327677772, tako što je na svakom štandu radnicama
+                naručene proizvode plaćao tim novčanicama i uzimao kusur, a zatim dana 05. avgusta 2015. godine oko 20:30
+                časova na kiosku AD "Štampa" u Zelenici pokušao da stavi u opticaj lažnu novčanicu od 100 eura tako što je
+                radnici M.B. zatražio kutija cigareta "Marlboro" i za nju dao novčanicu u iznosu od 100 eura, a kada je radnica
+                provjerom na aparatu u kiosk utvrdila da se radi o falsifikovanoj novčanici koja nema predviđene elemente
+                zaštite, istu uzeo da navodno pogleda o čemu se radi, a zatim se udaljio od kioska i novčanicu ponio sa
+                sobom, pri čemu je bio svjestan svoga djela i htio njegovo izvršenje,
+                
+                čime je izvršio produženo krivično djelo falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 2
+                </ref>
+                u vezi
+                <ref href="/krivicni#art_49">
+                    čl. 49 st. 1 Krivičnog zakonika Crne Gore
+                </ref>
+                .
+            </p>
+            <conclusions>
+                <p>
+                    pa ga sud, na osnovu citiranih zakonskih propisa i primjenom
+                    <ref href="/krivicni#art_4">
+                        čl. 4
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_32">
+                        čl. 32
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_36">
+                        čl. 36
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_42">
+                        čl. 42
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_45">
+                        čl. 45 stav 1 tačka 3
+                    </ref>
+                    i
+                    <ref href="/krivicni#art_46">
+                        čl. 46 stav 1 tačka 3 KZ CG
+                    </ref>
+                    , te
+                    <ref href="/postupak#art_374">
+                        čl. 374
+                    </ref>
+                    ,
+                    <ref href="/postupak#art_229">
+                        čl. 229 stav 1
+                    </ref>
+                    i
+                    <ref href="/postupak#art_239">
+                        čl. 239 stav 2 ZKP-a
+                    </ref>
+                    , OSUĐUJE
+                    Na kaznu zatvora u trajanju od 7 (sedam) mjeseci, koju će izdržati nakon pravosnažnosti presude.
+                    Okrivljeni se obavezuje da oštećenom 
+                    <party id="rd" refersTo="#rd" as="#injuredParty">
+                        R.D.
+                    </party>
+                    plati iznos od 400,00 eura na ime imovinskopravnog zahtjeva.
+                    Okrivljeni se obavezuje da plati troškove krivičnog postupka u paušalnom iznosu od 50,00 eura u korist
+                    budžeta Crne Gore na žiro račun 832-158-14 u roku od 15 dana od pravosnažnosti presude.
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

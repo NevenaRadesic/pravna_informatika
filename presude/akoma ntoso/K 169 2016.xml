@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        OSNOVNI SUD U BIJELOM POLJU
+                    </FRBRauthor>
+                    <FRBRdate date="2016-10-10">
+                        2016-10-10
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 169/16
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="ODT Bijelo Polje" />
+                <TLCOrganization eId="osp" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici" />
+
+                
+                <TLCPerson eId="ia" href="/ontology/person/ia" showAs="Ivan Adamović" />
+                <TLCPerson eId="db" href="/ontology/person/db" showAs="Draginja Bošković" />
+                <TLCPerson eId="bd" href="/ontology/person/bd" showAs="B.D." />
+                <TLCPerson eId="ss" href="/ontology/person/ss" showAs="Slavenko Smolović" />
+                <TLCPerson eId="amm" href="/ontology/person/amm" showAs="A.M.M." />
+                <TLCPerson eId="jc" href="/ontology/person/jc" showAs="J.C." />
+
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+                <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+                <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    OSNOVNI SUD U BIJELOM POLJU
+                </organization>
+                , sudija pojedinac
+                <party id="ia" refersTo="#ia" as="#judge">
+                    Ivan Adamović
+                </party>
+                , uz učešće samostalnog referenta zapisničara
+                <party id="db" refersTo="#db" as="#clerk">
+                    Draginje Bošković
+                </party>
+                , u krivičnom predmetu protiv okrivljenog
+                <party id="bd" refersTo="#bd" as="#defendant">
+                    B.D. 
+                </party>
+                iz Podgorice, zbog krivičnog djela falsifikovanje novca iz 
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 2 Krivičnog zakonika Crne Gore
+                </ref>
+                , po optužnici 
+                <organization id="odt" refersTo="#odt">
+                    Osnovnog državnog tužilaštva u Bijelom Polju
+				</organization>
+                , Kt. br. 234/16 od 22. 09. 2016. godine, nakon održanog usmenog, glavnog i javnog pretresa, u prisustvu Državnog tužioca u 
+                <organization id="odt" refersTo="#odt">
+                    Osnovnom državnom tužilaštvu u Bijelom Polju 
+				</organization>
+                <party id="s" refersTo="#ss" as="#plantiff">
+                    Slavenka Smolovića
+                </party>
+                , okrivljenog
+                <party id="bd" refersTo="#bd" as="#defendant">
+                    B.D.
+                </party>
+                i njegovog branioca po službenoj dužnosti
+                <party id="amm" refersTo="#amm" as="#lawyer">
+                    A.M.M.
+                </party>
+                , dana 10. 10. 2016. godine, donio je i objavio,
+                P R E S U D U
+                Okrivljeni
+                <party id="bd" refersTo="#bd" as="#bd">
+                    B.D.
+                </party>
+                , JMBG-.., od oca M., majke M., rođene S., rođen ..... godine u Podgorici, sa prebivalištem u mjestu rođenja, Ulica B.T.., završio SSS, srednjeg imovnog stanja, osuđivan presudama 
+                <organization id="osp" refersTo="#osp">
+                    Osnovnog suda u Podgorici
+                </organization>
+                : K. br. 05/1336 od 24. 12. 2007. godine, zbog KD iz 
+                <ref href="/krivicni#art_339">
+                    čl. 339 st. 1 KZ-a 
+                </ref>
+                i osuđen na kaznu zatvora od 3 mjeseca uslovno na jednu godinu i K. br. 156/12 od 16. 07. 2012. godine, zbog KD iz 
+                <ref href="/krivicni#art_256">
+                    čl. 256 st. 2 
+                </ref>
+                u vezi 
+                <ref href="/krivicni#art_256">
+                    čl. 256 st. 1 KZa 
+                </ref>
+                i osuđen na kaznu zatvora od 3 mjeseca uslovno na dvije godine, bio pritvoru od 29. 08. 2016. do 10. 10. 2016. godine,
+                K R I V J E
+                - Zato što je:
+                10. Oktobar 2016 - Pribavio lažan novac - 9 (devet) novčanica u apoenima od po 20,00 eura, istog serijskog broja (P73734420404/P66734423443), od kojih je, dana 29. 08. 2016. godine, tri novčanice stavio u opticaj kao prave, na način što je u vremenskom inervalu od 15:00h do 18:00h, u mjestu Podbišće, Lepenac i Krstac, opština Mojkovac, platio prodavcima maloljetnoj 
+                <party id="jc" refersTo="#jc" as="#victim">
+					J.C.
+				</party>
+                500 grama domaćeg proizvoda od dunja, N.M.jedan kilogram meda i V.R.jedan litar soka, nakon čega se svojim putničkim motornim vozilom marke "RenaultClio", udaljio u pravcu Mojkovca i odbacio 6 (šest) preostalih novčanica, svjestan svog djela, čije izvršenje je htio i znajući da je njegovo djelo zabranjeno,
+                - čime je izvršio krivično djelo falsifikovanje novca iz 
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 2 Krivičnog zakonika Crne Gore 
+                </ref>,
+                </p>    
+                <conclusions>
+                - pa ga sud, primjenom citiranih zakonskih propisa i čl. 2, 4, 5, 13, 15, 32, 36, 42, 45 i 46 Krivičnog zakonika CG, te čl. 226, 229, 239 i 374 Zakonika o krivičnom postupku Crne Gore (ZKP-a CG),
+                - pa ga sud, primjenom citiranih zakonskih propisa i
+                <ref href="/krivicni#art_2">
+                    čl. 2
+                </ref>,
+                <ref href="/krivicni#art_4">
+                    4
+                </ref>,
+                <ref href="/krivicni#art_5">
+                    5
+                </ref>,
+                <ref href="/krivicni#art_13">
+                    13
+                </ref>,
+                <ref href="/krivicni#art_15">
+                    15
+                </ref>,
+                <ref href="/krivicni#art_32">
+                    32
+                </ref>,
+                <ref href="/krivicni#art_36">
+                    36
+                </ref>,
+                <ref href="/krivicni#art_42">
+                    42
+                </ref>,
+                <ref href="/krivicni#art_45">
+                    45
+                </ref>,
+                <ref href="/krivicni#art_46">
+                    46 Krivičnog zakonika CG
+                </ref>
+                , te
+                <ref href="/postupak#art_226">
+                    čl. 226
+                </ref>,
+                <ref href="/postupak#art_229">
+                    229
+                </ref>,
+                <ref href="/postupak#art_239">
+                    239
+                </ref>, i
+                <ref href="/postupak#art_374">
+                    374 Zakonika o krivičnom postupku Crne Gore (ZKP-a CG)
+                </ref>
+                ,
+                O S U Đ U J E
+                Na kaznu zatvora od 7 (sedam) mjeseci, u koju kaznu mu se ima uračunati vrijeme provedeno u pritvoru, od
+                29. 08. 2016. godine, od 20:30h, do 10. 10. 2016. godine.
+                Shodno
+                <ref href="/krivicni#art_75">
+                    čl. 75
+                </ref>
+                u vezi
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 5 Krivičnog zakonika Crne Gore
+                </ref>
+                ,
+                okrivljenom se izriče mjera bezbjednosti
+                trajnog oduzimanja predmeta i to: 9 (devet) novčanica u apoenima od po 20,00 eura, svaka serijskog broja (P73734420404/P66734423443), kao predmeti izvršenja krivičnog djela.
+                Okrivljeni se obavezuje da ovom sudu plati na ime paušala iznos od 35,00€, kao i da plati ostale troškove krivičnog postupka u iznosu od 132,00 eura, koje iznose će uplatiti na račun Budžeta Crne Gore broj: 832-151-35, u roku od 15 dana, po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, s tim što je dokaz o uplati dužan dostaviti krivičnoj pisarnici ovog suda.
+                Okrivljeni se obavezuje da plati i troškove krivičnog postupka nastale angažovanjem branioca po službenoj dužnosti a o istima će biti odlučeno posebnim rješenjem.
+                Okrivljeni se obavezuje da zakonskom zastupniku maloljetne oštećene 
+                
+                <party id="jc" refersTo="#jc" as="#victim">
+					J.C.
+				</party>
+                 ocu V.C., na ime imovinskopravnog zahtjeva, plati iznos od 20,00 eura, u roku od 15 dana, po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja.
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

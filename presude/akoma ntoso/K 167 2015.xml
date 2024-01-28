@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        OSNOVNI SUD U BERANAMA
+                    </FRBRauthor>
+                    <FRBRdate date="2015-11-27">
+                        2015-11-27
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 167/15
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Berane" showAs="Osnovni sud u Beranama" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Berane" showAs="ODT Berane" />
+
+                <TLCPerson eId="dp" href="/ontology/person/dp" showAs="Dubravka Popović" />
+                <TLCPerson eId="ddj" href="/ontology/person/ddj" showAs="Dijana Đurišić" />
+                <TLCPerson eId="rlj" href="/ontology/person/rlj" showAs="R. Lj." />
+                <TLCPerson eId="vdj" href="/ontology/person/vdj" showAs="Vladan Đalović" />
+                <TLCPerson eId="dk" href="/ontology/person/dk" showAs="D. K." />
+
+                <TLCPerson eId="rs" href="/ontology/person/rs" showAs="R. S." />
+                <TLCPerson eId="sd" href="/ontology/person/sd" showAs="S. D." />
+                <TLCPerson eId="pm" href="/ontology/person/pm" showAs="P. M." />
+                <TLCPerson eId="rv" href="/ontology/person/rv" showAs="R. V." />
+                <TLCPerson eId="mz" href="/ontology/person/mz" showAs="M. Ž." />
+
+
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="plantiff" href="/ontology/role/plantiff" showAs="plantiff" />
+                <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+                <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    Osnovni sud u Beranama
+                </organization>
+                , kao prvostepeni, krivični, po sudiji 
+                <party id="dp" refersTo="#dp" as="#judge">
+                    Dubravki Popović
+                </party>
+                , uz sudjelovanje zapisničara 
+                <party id="ddj" refersTo="#ddj" as="#clerk">
+                    Djurišić Dijane
+                </party>
+                , u krivičnom predmetu protiv okrivljenog 
+                <party id="rlj" refersTo="#rlj" as="#defendant">
+                    R.Lj.
+                </party>
+                , iz B., zbog produženog krivičnog djela falsifikovanje novca iz 
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 2
+                </ref>
+                u vezi
+                <ref href="/krivicni#art_49">
+                    čl. 49 Krivičnog zakonika Crne Gore
+                </ref>
+                , po optužnici 
+                <organization id="odt" refersTo="#odt">
+					ODT-a u Beranama
+				</organization>
+                Kt.br.270/13 od 18.12.2013 godine, izmijenjenoj na glavnom pretresu od 13.06.2014 i 09.06.2015 g, nakon održanog usmenog, glavnog i javnog pretresa u prisustvu zamjenika  
+                <organization id="odt" refersTo="#odt">
+					ODT-a u Beranama
+				</organization>
+                <party id="vdj" refersTo="#vdj" as="#plantiff">
+                    Djalović Vladana
+                </party>
+                , okrivljenog 
+                <party id="rlj" refersTo="#rlj" as="#defendant">
+                    R.Lj.
+                </party>
+                 i njegovog branioca adv. 
+                 <party id="dk" refersTo="#dk" as="#lawyer">
+                    D.K.
+                </party>
+                 , donio je dana 27.11.2015 godine a javno objavio dana 30.11.2015 godine,
+                P R E S U D U
+                Okrivljeni R.LJ. JMBG.... od oca V. i majke M., rodjene M., rodjen ... . godine, u B., sa prebivalištem u B., ul. G.P., br. ...sa boravištem u ul.,,M.S.“br. ..., državljanin Republike S., zaposlen, oženjen, otac troje djece, pismen, apsolvent istorije, srednjeg imovnog stanja, neosudjivan.
+                K r i v je :
+                Što je :
+                Dana ... godine, oko ... časova u kiosku ,,Š“ u ul. ,,S.S.“ u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac - jednu novčanicu u apoenu od 200 €, serijskog broja U ... za koju je znao da je lažna na način što je prilikom kupovine cigareta marke ,, P.“ i ,,D.“ i elektronske dopune od 10 €, platio prodavačici K.S. ovom falsifikovanom novčanicom.
+                Dana ... godine, oko ... časa, u kiosku str. ,,S.“ vlasništvo oštećenog 
+                
+                <party id="rs" refersTo="#rs" as="#victim">
+                    R.S.
+                </party>
+                
+                , u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac- jednu novčanicu u apoenu od 200 € serijskog broja U ... za koju je znao da je lažna, na način što je prilikom kupovine cigareta marke ,, P.“ , cigareta ,,B.“ i 500 gr. kafe, platio oštećenom R.S., ovom falsifikovanom novčanicom.
+                Dana ... godine, oko ... . časova, u kiosku DOO ,, M.L.“ vlasništvo oštećene 
+                
+                <party id="sd" refersTo="#sd" as="#victim">
+                    S.D.
+                </party>
+                , u ul. M.Z., u B., svjestan
+                    svoga djela čije je izvršenje htio, stavio u opticaj lažan novac- jednu novčanicu u apoenu od 200 € serijskog
+                    broja Z ...., za koju je znao da je lažna, na način što je prilikom kupovine cigareta marke ,,A.b.“, i marke ,,V.“i
+                    kafe ,,B.“,platio prodavačici R.S. ovom falsifikovanom novčanicom.
+                Dana ... godine, oko ... časova u prodavnici ,, M.k.“ vlasništvo oštećenog 
+                <party id="pm" refersTo="#pm" as="#victim">
+                    P.M.
+                </party>
+                , u ul. P., u B., svjestan svoga
+                    djela čije je izvršenje htio, stavio u opticaj lažan novac- jednu novčanicu u apoenu od 200 € serijskog broja
+                    V..., za koju je znao da je lažna, na način što je prilikom kupovine jedne flaše viskija ,,C.r.,“ platio prodavcu
+                    Z.B. ovom falsifikovanom novčanicom .
+                Dana ... godine, oko ... časova, u kiosku Str. M. “II, vlasništvo oštećenog 
+                
+                <party id="mz" refersTo="#mz" as="#victim">
+                    M.Ž.
+                </party>
+                , u ul. M.Z., u B., svjestan
+                    svoga djela čije je izvršenje htio, stavio u opticaj lažan novac - jednu novčanicu u apoenu od 200 € serijskog
+                    broja V ..., za koju je znao da je lažna, na način što je prilikom kupovine jedne dopune od 5 € i cigareta platio
+                    prodavcu B.Z. ovom falsifikovanom novčanicom
+                Dana ... godine, oko ... časova u kiosku DOO ,,K.,“ vlasništvo oštećenog 
+                
+                <party id="rv" refersTo="#rv" as="#victim">
+                    R. V.
+                </party>
+                , u ul. D.V., u B., svjestan svoga
+                    djela čije je izvršenje htio, stavio u opticaj lažan novac- jednu novčanicu u apoenu od 200 € serijskog broja
+                    S ... za koju je znao da je lažna, na način što je prilikom kupovine cigareta marke V., kafe marke B. i muškog
+                    parfema marke F., platio prodavcu D.Ž. ovom falsifikovanom novčanicom .
+            </p>
+            <p>
+                Čime je izvršio produženo krivično djelo falsifikovanje novca iz 
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 2
+                </ref>
+                u vezi
+                <ref href="/krivicni#art_49">
+                    čl. 49 Krivičnog zakonika Crne Gore
+                </ref>
+            </p>
+            <conclusions>
+                Pa ga sud za izvršeno krivično djelo, na osnovu navedenog zakonskog propisa, te primjenom 
+                <ref href="/krivicni#art_32">
+                    čl. 32
+                </ref>,
+                <ref href="/krivicni#art_36">
+                    36
+                </ref>,
+                <ref href="/krivicni#art_42">
+                    42
+                </ref>,
+                <ref href="/krivicni#art_45">
+                    45
+                </ref>,
+                <ref href="/krivicni#art_46">
+                    46
+                </ref>,
+                i
+                <ref href="/krivicni#art_49">
+                    49 Krivičnog Zakonika C.G.
+                </ref>
+                 i 
+                <ref href="/postupak#art_374">
+                    čl.374 ZKP-a
+                </ref>
+                O S U DJ U J E
+                Na kaznu zatvora u trajanju od 1 godine u koju se ima uračunati vrijeme provedeno u pritvoru počev od ... godine do ... godine i vrijeme od ... godine do ... godine.
+                Okrivljeni se obavezuje da na ime troškova krivičnog postupka plati ovom sudu iznos od 100 €, i na ime paušala plati iznos od 50 € u roku od 15 dana po pravosnažnosti presude pod prijetnjom prinudnog izvršenja.
+                
+                Oštećeni 
+                <party id="rs" refersTo="#rs" as="#victim">
+                    R.S.
+                </party>
+                , 
+                <party id="sd" refersTo="#sd" as="#victim">
+                    S.D.
+                </party>
+                , 
+                <party id="pm" refersTo="#pm" as="#victim">
+                    P.M.
+                </party>
+                i 
+                <party id="rv" refersTo="#rv" as="#victim">
+                    R. V.
+                </party>
+                , iz B., se radi ostvarivanja imovinsko pravnog zahtjeva za naknadu štete upućuju
+                na parnicu .
+                Imovinsko pravnog zahtjeva za naknadu štete od strane oštećenog 
+                <party id="mz" refersTo="#mz" as="#victim">
+                    M.Ž.
+                </party>
+                nije bilo.
+                Na osnovu 
+                
+                <ref href="/krivicni#art_258">
+                    čl.258.st.5. Krivičnog Zakonika C.G. 
+                </ref>
+                oduzima se lažan novac – novčanice serijskih brojeva U...;Z ...
+                ;V...;V...;S ... i U ..., a koje se privremeno čuvaju u Trezoru C.banke C.G
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

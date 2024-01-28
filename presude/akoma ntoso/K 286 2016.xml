@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        OSNOVNI SUD U NIKŠIĆU
+                    </FRBRauthor>
+                    <FRBRdate date="2017-06-26">
+                        2017-06-26
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 286/16
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CRNA GORA
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Niksic" showAs="Osnovni sud u Nikšiću" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Niksic" showAs="Osnovno državno tužilaštvo Nikšić" />
+                <TLCPerson eId="vKovacevic" href="/ontology/person/vKovacevic" showAs="Vesna Kovačević" />
+                <TLCPerson eId="rNikolic" href="/ontology/person/rNikolic" showAs="Rade Nikolić" />
+                <TLCPerson eId="mVjera" href="/ontology/person/mVjera" showAs="Mićunović Vjera" />
+                <TLCPerson eId="lVV" href="/ontology/person/lVV" showAs="L. V." />
+                <TLCPerson eId="sb" href="/ontology/person/sb" showAs="S..B.." />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="plantiff" href="/ontology/role/plantiff" showAs="plantiff" />
+                <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    OSNOVNI SUD U NIKŠIĆU
+                </organization>
+                , kao prvostepeni krivični sud, sudija
+                <party id="vKovacevic" refersTo="#vKovacevic" as="#judge">
+                    Vesna Kovačević
+                </party>
+                , uz sudjelovanje
+                <party id="rNikolic" refersTo="#rNikolic" as="#clerk">
+                    Rade Nikolić
+                </party>
+                kao zapisničara, u krivičnom predmetu optužene
+                <party id="sb" refersTo="#sb" as="#defendant">
+                    S.. B..
+                </party>
+                , zbog produženog krivičnog djela falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl.258 st.2
+                </ref>
+                u vezi 
+                <ref href="/krivicni#art_49">
+                    čl. 49. Krivičnog zakona Crne Gore
+                </ref>
+                , po optužnici
+                <organization id="odt" refersTo="#odt">
+                    ODT-a Nikšić
+                </organization>
+                Kt.br.494/15 od 24.08.2016.godine, nakon završenog glavnog i javnog
+                pretresa, dana 21.06.2017. godine, u prisustvu državnog tužioca
+                <party id="mVjera" refersTo="#mVjera" as="#plantiff">
+                    Mićunović Vjere
+                </party>
+                , optužene
+                <party id="sb" refersTo="#sb" as="#defendant">
+                    S..B..
+                </party>
+                i njenog branioca
+                <party id="lVV" refersTo="#lVV" as="#lawyer">
+                    L.. V..
+                </party>
+                , advokata iz Nikšića, donio je a dana
+                26.06.2017 godine i javno objavio
+            </p>
+            <p>
+                P R E S U D U
+                Okrivljena:
+                <party id="sb" refersTo="#sb" as="#defendant">
+                    S.. B..
+                </party>
+                , jmbg: .., od oca B... i majke K.. rodjene B.., rodjene .. ...godine u Nikšiću, sa prebivalištem u
+                mjestu rodjenja – ulica R.. K.. br..., državljanin Crne Gore, udata, majka jednog djeteta, po zanimanju
+                frizerka, pismena, sa završenom srednjom školom, lošeg imovnog stanja, ranije neosudjivana.
+            </p>
+            
+            <p>
+                K r i v a j e
+            </p>
+            <p>
+                Što je:
+            </p>
+            <p>
+                Dana 15. IX 2015.godine u 17:14 časova u Nikšiću, svjesna svog djela i htjela njegovo izvršenje,
+                lažan novac stavila u opticaj, na način što je novčanicom u apoenu od 100,00 eura, serijskog
+                broja .., koja nije autentična banknota, a čije razlike su u odnosu na orginalnu banknotu
+                izražene u kvalitetu štampe i mikroštampe i kvalitetu elemenata zaštite papira na kojem je
+                novčanica uradjena, platila sirup za djecu u vrijednosti od 2,00 eura, koji je kupila u apoteci
+                ''G.. D..' koja se nalazi u ulici R.. D.
+            </p>
+            <p>
+                Dana 21.IX 2015.godine oko 10:06 časova u Nikšiću, svjesna svog djela i htjela njegovo
+                izvršenje, lažan novac stavila u opticaj, na način što je novčanicom u apoenu od 100,00 eura,
+                serijskog broja .., koja nije autentična banknota, a čije razlike su u odnosu na orginalnu
+                banknotu izražene u kvalitetu štampe i mikroštampe i kvalitetu elemenata zaštite papira na
+                kojem je novčanica uradjena, platila sirup i ampule za djecu, pantenol kremu i kremu za
+                depilaciju u ukupnoj vrijednosti od 8,45 eura, koje je kupila u apoteci '' M..'' vlasništvo
+                N.. V.. koja se nalazi u ulici Alekse Backovića,
+            </p>
+            <p>
+                čime je izvršila produženo krivično djelo falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl.258 st.2 u vezi čl.49 Krivičnog zakonika Crne Gore
+                </ref>
+                .
+            </p>
+
+            <conclusions>
+                <p>
+                    pa sud optuženu za navedeno krivično djelo primjenom
+                    <ref href="/krivicni#art_3">
+                        čl. 3
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_4">
+                        čl. 4
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_5">
+                        čl. 5
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_13">
+                        čl. 13
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_15">
+                        čl. 15
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_32">
+                        čl. 32
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_36">
+                        čl. 36
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_36a">
+                        čl. 36a
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_42">
+                        čl. 42
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_45">
+                        čl. 45
+                    </ref>
+                    i
+                    <ref href="/krivicni#art_46">
+                        čl. 46 Krivičnog zakonika Crne Gore
+                    </ref>
+                    , te
+                    <ref href="/postupak#art_226">
+                        čl. 226
+                    </ref>
+                    ,
+                    <ref href="/postupak#art_229">
+                        čl. 229
+                    </ref>
+                    i
+                    <ref href="/postupak#art_374">
+                        čl. 374 Zakonika o krivičnom postupku
+                    </ref>
+                    ;
+                </p>
+                <p>
+                    O S U Đ U J E
+                </p>
+                <p>
+                    Na kaznu zatvora u trajanju od 6 (šest) mjeseci, koju će kaznu optužena izdržati u prostorijama gdje
+                    stanuje nakon pravosnažnosti ove odluke.
+                </p>
+                <p>
+                    U toku izvršenja kazne zatvora optužena ne smije napuštati prostorije u kojima stanuje, osim u
+                    slučajevima propisanim zakonom kojim se uređuje izvršenje krivičnih sankcija.
+                </p>
+                <p>
+                    Ukoliko optužena jednom u trajanju preko šest časova ili dva puta u trajanju do šest časova samovoljno
+                    napusti prostorije u kojima stanuje, sud će odrediti da ostatak kazne zatvora izdrži u Zavodu za
+                    izvršenje krivičnih sankcija.
+                </p>
+                <p>
+                    Obavezuje se optužena da na ime troškova krivičnog postupka plati iznos od 150,00 (stotinu
+                    pedeset) eura u roku od 15 dana, po pravosnažnosti presude pod prijetnjom prinudnog izvršenja na
+                    žiro račun ovog suda br. 832-152-32 , te da dokaz o izvršenoj uplati dostavi sudu.
+                </p>
+                 <p>
+                    Sud shodno
+                    <ref href="/krivicni#art_258">
+                        čl.258 st.5
+                    </ref>
+                    i
+                    <ref href="/krivicni#art_75">
+                        čl.75 st.3 i Krivičnog zakonika Crne Gore
+                    </ref>
+                     optuženoj
+                    <party id="sb" refersTo="#sb" as="#defendant">
+                        S.. B..
+                    </party>
+                    i z r i č e MJERU BEZBJEDNOSTI obaveznog oduzimanja novčanice u apoenu od 100,00 eura serijski broj ..
+                    i novčanice u apoenu od 100,00 eura serijski broj ... kao predmeta izvršenja krivičnog djela.
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

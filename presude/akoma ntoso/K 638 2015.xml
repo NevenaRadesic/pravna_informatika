@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        OSNOVNI SUD U PODGORICI
+                    </FRBRauthor>
+                    <FRBRdate date="2015-11-11">
+                        2015-11-11
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 638/15
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CRNA GORA
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo" />
+                <TLCPerson eId="zjovovic" href="/ontology/person/zjovovic" showAs="Željka Jovović" />
+                <TLCPerson eId="drajkovic" href="/ontology/person/drajkovic" showAs="Danijela Rajković" />
+                <TLCPerson eId="vradonjic" href="/ontology/person/vradonjic" showAs="Vukas Radonjić" />
+                <TLCPerson eId="mp" href="/ontology/person/mp" showAs="M. P." />
+
+
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="plaintiff" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    OSNOVNI SUD U PODGORICI
+                </organization>
+                , kao prvostepeni krivični, po sudiji
+                <party id="zjovovic" refersTo="#zjovovic" as="#judge">
+                    Željki Jovović
+                </party>
+                , uz učešće
+                <party id="drajkovic" refersTo="#drajkovic" as="#clerk">
+                    Danijele Rajković
+                </party>
+                , u krivičnom predmetu protiv okrivljenog
+                <party id="mp" refersTo="#mp" as="#defendant">
+                    M.P
+                </party>
+                , zbog krivičnog dijela falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 4 Krivičnog zakonika Crne Gore
+                </ref>
+                rješavajući po optužnom predlogu 
+                <organization id="odt" refersTo="#odt">
+                    Osnovnog državnog tužioca u Podgorici 
+				</organization>
+                Kt. br. 732/15 od 01. 10. 2015. godine, nakon održanog glavnog i javnog pretresa dana 11. 11. 2015. godine, u prisustvu zamjenika ODT Podgorica
+                <party id="vradonjic" refersTo="#vradonjic" as="#plaintiff">
+                    Vukasa Radonjića
+                </party>
+                i okrivljenog
+                <party id="mp" refersTo="#mp" as="#defendant">
+                    M.P
+                </party>
+                , donio je i istog dana javno objavio
+            </p>
+            <p>
+                P R E S U D U
+            </p>
+            <p>
+                Okrivljeni:
+                <party id="mp" refersTo="#mp" as="#defendant">
+                    M.P, zv. Mađo
+                </party>
+                , JMB xxxxxxxxxxxxx, od oca B i majke S, rođene P, rođen xx. xx. 19xx. godine u Podgorici, sa
+                mjestom prebivališta u Danilovgradu n. Spuž, državljanin Crne Gore, završio srednju školu, nezaposlen,
+                neoženjen, bez djece, lošeg imovnog stanja, neosuđivan.
+            </p>
+            <p>
+                Kriv je
+            </p>
+            <p>
+                Što je:
+                Dana 09. jula 2015. godine, u Podgorici, svjestan svog djela čije je izvršenje htio i svjestan da je njegovo djelo
+                zabranjeno, iako je znao da je načinjen lažan novac, to nije prijavio, na način što nije prijavio da je načinjena
+                lažna novčanica u apoenu od 100 eura, serijskog broja N15075191271, koju je dobio od neidentifikovanog
+                lica, a za koju je znao da je lažna,
+                - čime je učinio krivično djelo falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 4 Krivičnog zakonika Crne Gore
+                </ref>
+                .
+
+                <conclusion>
+                    Pa mu Sud za navedeno krivično djelo primjenom
+                    <ref href="/krivicni#clan_4">
+                        čl. 4 st. 2,
+                    </ref>
+                    <ref href="/krivicni#clan_42">
+                        čl. 42, st. 1,
+                    </ref>
+                    <ref href="/krivicni#clan_52">
+                        čl. 52 st. 2,
+                    </ref>
+                    <ref href="/krivicni#clan_53">
+                        čl. 53
+                    </ref>
+                    i
+                    <ref href="/krivicni#clan_54">
+                        čl. 54 Krivičnog zakonika Crne Gore
+                    </ref>
+                     i
+                    <ref href="/postupak#clan_226">
+                        čl. 226
+                    </ref>,
+                    <ref href="/postupak#clan_229">
+                        čl. 229
+                    </ref>
+                    i
+                    <ref href="/postupak#clan_374">
+                        čl. 374 Zakonika o krivičnom postupku
+                    </ref>
+                    , izriče
+            
+                    USLOVNU OSUDU
+                    11. Novembar 2015
+                    S tim, što mu utvrđuje kaznu zatvora u trajanju od 30 (trideset) dana i istovremeno određuje da se ista neće
+                    izvršiti, ako okrivljeni u roku od 1 (jedne) godine po pravosnažnosti presude ne izvrši novo krivično djelo.
+                    Obavezuje se okrivljeni da plati na ime troškova krivičnog postupka iznos od 30,00 eura, u roku od 15 dana po
+                    pravosnažnosti presude, pod prijetnjom prinudnog izvršenja.
+                </p>
+                <p>
+                    Na osnovu
+                    <ref href="/krivicni#clan_75">
+                        čl. 75
+                    </ref>
+                    i
+                    <ref href="/krivicni#clan_258">
+                        čl. 258 st. 5 Krivičnog zakonika Crne Gore
+                    </ref>
+                     okrivljenom se izriče
+                </p>
+                <p>
+                    MJERA BEZBJEDNOSTI trajnog
+                    oduzimanja novčanice u apoenu od 100 eura, serijskog broja N15075191271, kao predmet izvršenja krivičnog
+                    djela
+                </p>
+            </conclusion>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

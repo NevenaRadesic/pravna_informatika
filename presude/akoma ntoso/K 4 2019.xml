@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+	<judgment>
+		<meta>
+			<identification source="#court">
+				<FRBRWork>
+					<FRBRauthor>
+						OSNOVNI SUD U CETINJU
+					</FRBRauthor>
+					<FRBRdate date="2019-04-25">
+						2019-04-25
+					</FRBRdate>
+					<FRBRtitle>
+						K 4/2019
+					</FRBRtitle>
+					<FRBRcountry>
+						CG
+					</FRBRcountry>
+				</FRBRWork>
+			</identification>
+			<references>
+				<TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Cetinje" showAs="Osnovni sud u Cetinju" />
+				<TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Cetinje" showAs="Osnovno drzavno tuzilastvo" />
+				
+                <TLCPerson eId="cmaria" href="/ontology/person/cmaria" showAs="Ćupić Marija" />
+				<TLCPerson eId="amartinovic" href="/ontology/person/amartinovic" showAs="Martinović Aleksandra" />
+				<TLCPerson eId="sradunovic" href="/ontology/person/sradunovic" showAs="Radunović Sanja" />
+				<TLCPerson eId="cs" href="/ontology/person/cs" showAs="C. S." />
+				<TLCPerson eId="ak" href="/ontology/person/ak" showAs="A. K." />
+				<TLCPerson eId="pv" href="/ontology/person/pv" showAs="P. V." />
+				
+                
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+
+			</references>
+		</meta>
+		<judgmentBody>
+			<p>
+				<organization id="os" refersTo="#os">
+					OSNOVNI SUD U CETINJU
+				</organization>
+				, po sudiji
+				<party id="cmaria" refersTo="#cmaria" as="#judge">
+					Ćupić Marija
+				</party>
+				, uz sudjelovanje
+				<party id="amartinovic" refersTo="#amartinovic" as="#clerk">
+					Martinović Aleksandra
+				</party>
+				, kao zapisničara,
+				u krivičnom predmetu optuženog
+				<party id="cs" refersTo="#cs" as="#defendant">
+					C. S.
+				</party>
+				, zbog krivičnog djela falsifikovanje novca u produženom trajanju iz
+				<ref href="/krivicni#art_258">
+					čl. 258. st. 2. u vezi čl. 49. st. 1. Krivičnog zakonika Crne Gore (KZCG)
+				</ref>
+
+                <ref href="/krivicni#art_258">
+                    čl. 258. st. 2.
+                </ref>
+                u vezi
+                <ref href="/krivicni#art_49">
+                    čl. 49. st. 1. Krivičnog zakonika Crne Gore (KZCG)
+                </ref>
+				, a po Optužnici 
+                <organization id="odt" refersTo="#odt">
+                    Osnovnog državnog tužilaštva u Cetinju 
+				</organization>
+                
+                Kt.br.151/18 od 05.02.2019. godine, koja je izmijenjena na glavnom pretresu dana
+				22.04.2019. godine, nakon održanog glavnog i javnog pretresa dana
+				22.04.2019. godine, u prisustvu
+				zastupnika Optužnice
+				<party id="cmaria" refersTo="#cmaria" as="#plaintiff">
+					Radunović Sanje
+				</party>
+				, Državnog tužioca u ODT-u u Cetinju, optuženog
+				<party id="cs" refersTo="#cs" as="#defendant">
+					C. S.
+				</party>
+				, branioca
+				<party id="ak" refersTo="#ak" as="#lawyer">
+					A. K.
+				</party>
+				, adv. iz P., te odsustvu ovlašćenog predstavnika oštećenog pravnog lica “S. T.“ d.o.o. P., R. I. i oštećenog 
+                
+                <party id="pv" refersTo="#pv" as="#victim">
+					P.V.
+				</party>
+                ,
+				dana, 25.04.2019. godine, donio je i javno objavio
+				P R E S U D U
+				Optuženi:
+				<party id="cs" refersTo="#cs" as="#defendant">
+					C. S.
+                </party>    
+                    , JMBG .., od oca B. i majke Z., rođene M., rođen, .. godine, u L., R. S., sa prebivalištem u B., A.,
+					državljanin S., pismen, sa završenom srednjom školom za kran majstora i upravljanje vozovima, zaposlen kao
+					taksi vozač, neoženjen, bez djece, srednjeg imovnog stanja, lišen slobode počev od 22.11.2018. godine, u
+					19,00 časova do 18.12.2018. godine; neosuđivan
+				
+				K r i v j e
+				Zato što je:
+				Dana, 13. novembra 2018. godine, u prodajnom objektu zv.“V.”, u ulici “X C.” u C., vlasništvo 
+                <party id="pv" refersTo="#pv" as="#victim">
+					P.V.
+				</party>
+                 iz C.,
+				svjestan svog djela i njegove zabranjenosti čije je izvršenje htio, stavio u opticaj lažan novac-jednu novčanicu
+				u apoenu od 100,00 eura, neutvrđenog serijskog broja, na način što je navedenom lažnom novčanicom platio
+				nekoliko kupljenih artikala u navedenom prodajnom objektu, a potom dana 18.11.2018.godine, oko 18,10
+				časova, u prodajnom objektu “S. k.”, u bulevaru „C. j.” u C., na prethodno opisani način ponovo stavio u
+				opticaj lažan novac-jednu novčanicu u apoenu od 100,00 eura, ser.br.X14302576621, te dana
+				22.11.2018.godine, u kući vlasništvo M. R., u naselju .. u C., gdje je privremeno boravio, držao lažan novac -
+				jednu novčanicu u apoenu od 100,00 eura, serijskog broja U06527526055, s namjerom da ga stavi u opticaj
+				kao pravi, za koje novčanice je tehničkom analizom utvrđeno da se radi o falsifikatima istog tipa i to EUA0100
+				P00007, koji je prepoznatljiv po odstupanju u odnosu na originalnu novčanicu i to: papira, štampe, zaštitne
+				niti, holograma i OVI,
+				- čime je izvršio krivično djelo falsifikovanje novca u produženom trajanju iz
+				<ref href="/krivicni#art_258">
+					čl. 258. st. 2. 
+                </ref>
+                u vezi 
+                <ref href="/krivicni#art_49">
+                    čl. 49. st. 1. KZCG
+                </ref>
+				,
+            </p>
+            <conclusions>
+
+                Pa ga Sud primjenom citiranih zakonskih propisa, te
+                <ref href="/krivicni#art_3">
+                čl. 3
+                </ref>,
+                <ref href="/krivicni#art_4">
+                čl. 4
+                </ref>,
+                <ref href="/krivicni#art_5">
+                čl. 5
+                </ref>,
+                <ref href="/krivicni#art_13">
+                čl. 13
+                </ref>,
+                <ref href="/krivicni#art_15">
+                čl. 15
+                </ref>,
+                <ref href="/krivicni#art_32">
+                čl. 32
+                </ref>,
+                <ref href="/krivicni#art_33">
+                čl. 33
+                </ref>,
+                <ref href="/krivicni#art_36">
+                čl. 36
+                </ref>,
+                <ref href="/krivicni#art_42">
+                čl. 42
+                </ref>,
+                <ref href="/krivicni#art_45">
+                čl. 45
+                </ref>,
+                <ref href="/krivicni#art_46">
+                čl. 46
+                </ref>,
+                <ref href="/krivicni#art_49">
+                čl. 49
+                </ref>,
+                <ref href="/krivicni#art_51">
+                čl. 51 KZCG
+                </ref>  
+                i
+                <ref href="/postupak#art_226">
+                    čl. 226-229
+                </ref>,
+                <ref href="/postupak#art_239">
+                    čl. 239.
+                </ref> i
+                <ref href="/postupak#art_374">
+                    čl. 374. ZKP-a
+                </ref>,
+
+				O S U Đ U J E
+				Na kaznu zatvora u trajanju od 6 (šest) mjeseci, u koju mu se ima uračunati vrijeme lišenja slobode počev
+				od 22.11.2018. godine od 19,00 časova pa do 18.12.2018. godine, dok preostali dio kazne ima izdržati po
+				pravosnažnosti ove presude.
+				Obavezuje se optuženi
+				<party id="cs" refersTo="#cs" as="#defendant">
+					C. S.
+				</party>
+				, da naknadi troškove sudskog paušala u iznosu od 50,00 eura, u korist Budžeta Crne Gore, u roku od 15 dana od dana pravosnažnosti ove presude, pod prijetnjom prinudnog izvršenja.
+				Dosuđuju se postavljeni imovinsko pravni zahtjevi oštećenima pravnom licu “S. T.” i ošt. 
+                <party id="pv" refersTo="#pv" as="#victim">
+					P.V.
+				</party>
+                u cjelosti, pa se obavezuje optuženi
+				<party id="cs" refersTo="#cs" as="#defendant">
+					C. S.
+				</party>
+				, da oštećenima, nadoknadi iznose od po 100,00 eura u roku od od 15 dana od
+				dana pravosnažnosti ove presude, pod prijetnjom prinudnog izvršenja.
+				Prema optuženom
+				<party id="cs" refersTo="#cs" as="#defendant">
+					C. S.
+				</party>
+				, sud primjenom
+
+				<ref href="/krivicni#art_258">
+					čl. 258. st. 5.
+				</ref> i 
+                <ref href="/krivicni#art_75">
+					75. st. 1. KZCG
+				</ref>
+
+
+				, izriče:
+				MJERU BEZBJEDNOSTI – ODUZIMANJE PREDMETA
+				Od optuženog
+				<party id="cs" refersTo="#cs" as="#defendant">
+					C. S.
+				</party>
+				, imaju se oduzeti tri novčanice i to: jedna novčanica u apoenu od 100,00 eura,
+				neutvrđenog serijskog broja, jedna novčanica u apoenu od 100,00 eura, ser.br. X14302576621 i jedna
+				novčanica u apoenu od 100,00 eura, serijskog broja U06527526055, za koje novčanice je tehničkom analizom
+				utvrđeno da se radi o falsifikatima istog tipa i to EUA0100 P00007
+			</conclusions>
+		</judgmentBody>
+	</judgment>
+</akomaNtoso>
