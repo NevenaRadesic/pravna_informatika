@@ -1,0 +1,6 @@
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%; /* Optional: set a specific height, adjust as needed */
+  }
