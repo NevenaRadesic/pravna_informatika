@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        OSNOVNI SUD U ROŽAJAMA
+                    </FRBRauthor>
+                    <FRBRdate date="2016-09-30">
+                        30. Septembar 2016
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 100/2016
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CRNA GORA
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Rozaje" showAs="Osnovni sud u Rožajama" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Rozaje" showAs="Osnovno državno tužilaštvo Rožaje" />
+                <TLCPerson eId="mZekic" href="/ontology/person/mZekic" showAs="Milosav Zekić" />
+                <TLCPerson eId="aLuboder" href="/ontology/person/aLuboder" showAs="Aida Luboder" />
+                <TLCPerson eId="aKalach" href="/ontology/person/aKalach" showAs="Aldin Kalač" />
+                <TLCPerson eId="mD" href="/ontology/person/mD" showAs="M. D." />
+                <TLCPerson eId="bS" href="/ontology/person/bS" showAs="B. Š." />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="plantiff" href="/ontology/role/plantiff" showAs="Plantiff" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    OSNOVNI SUD U ROŽAJAMA
+                </organization>
+                , kao nadležni prvostepeni krivični sud, po sudiji
+                <party id="mZekic" refersTo="#mZekic" as="#judge">
+                    Milosav Zekić
+                </party>
+                , uz učešće zapisničara
+                <party id="aLuboder" refersTo="#aLuboder" as="#clerk">
+                    Aida Luboder
+                </party>
+                , u krivičnom predmetu protiv okrivljenog
+                <party id="eS" refersTo="#eS" as="#defendant">
+                    E. Š.
+                </party>
+                , koji brani adv.
+                <party id="bS" refersTo="#bS" as="#lawyer">
+                    B. Š.
+                </party>
+                , zbog krivičnog djela falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl. 258. st. 2. Krivičnog zakonika Crne Gore
+                </ref>
+                , koji se vodi po optužnici
+                <organization id="odt" refersTo="#odt">
+                    ODT Rožaje
+                </organization>
+                Kt.br. 95/16 od 21.06.2016.g., nakon održanog glavnog i javnog pretresa dana 30.09.2016.g., u prisustvu Državnog tužioca
+                <party id="aKalach" refersTo="#aKalach" as="#plantiff">
+                    Aldina Kalača
+                </party>
+                , oštećene
+                <party id="mD" refersTo="#mD" as="#plantiff">
+                    M. D.
+                </party>
+                , okrivljenog i njegovog branioca, istog dana je donio i javno objavio sljedeću
+            </p>
+            <p>
+                P R E S U D U
+                Okrivljeni
+                <party id="eS" refersTo="#eS" as="#defendant">
+                    E. Š.
+                </party>
+                , od oca S. i majke B. rođene L., rođen 29.12.1997.godine, u Rožajama gdje i živi ul. Oslobođenja bb, državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov jezik, nezaposlen, neoženjen, pismen, završio SSS, siromašnog imovnog stanja, neosuđivan,
+            </p>
+            <p>
+                K r i v j e,
+                Što je:
+                dana 11.06.2016.godine, oko 16,40 časova, u Rožajama, u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, lažan novac u apoenu od 50 Eura, sa dva različita serijska broja S66515172255 i S66515172277, stavio u opticaj kao pravi, na način što je na kiosku DOO „NEAM“ Rožaje, vlasništvo M. D., kupio dvije paklice cigareta marke „Sobranie“ i dva pakovanja žvaka marke „Orbit“, koje je platio lažnom novčanicom, a prodavac- oštećena mu je vratila ostatak novca u iznosu od 43 Eura.
+                - čime je izvršio krivično djelo falsifikovanje novca iz čl. 258. st. 2. Krivičnog zakonika Crne Gore.
+            </p>
+            <conclusions>
+                <p>
+                    Pa ga sud primjenom pomenutih zakonskih propisa i
+                    <ref href="/krivicni#art_4">
+                        čl. 4
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_5">
+                        čl. 5
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_32">
+                        čl. 32
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_36">
+                        čl. 36
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_36a">
+                        čl. 36a
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_42">
+                        čl. 42
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_45">
+                        čl. 45
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_46">
+                        čl. 46
+                    </ref>
+                    st. 1. tač.3. Krivičnog Zakonika Crne Gore i
+                    <ref href="/postupak#art_374">
+                        čl. 374
+                    </ref>
+                    Zakonika o krivičnom postupku
+                    O S U DJ U J E
+                </p>
+                <p>
+                    Na KAZNU ZATVORA u trajanju od 6 (šest) mjeseci i istovremeno odredjuje da će se ova kazna izvršiti tako što će je osudjeni izdržavati u prostorijama u kojima stanuje, u koju kaznu mu se ima uračunati vrijeme provedeno u pritvoru od 11.06.2016.g. do 17.06.2016.g.
+                </p>
+                <p>
+                    Da plati na ime troškova krivičnog postupka iznos od 848,00 eura i na ime paušala iznos od 30,00 eura u korist budžeta Crne Gore u roku od 15,00 dana po pravosnažnosti ove presude.
+                </p>
+                <p>
+                    Od okrivljenog se oduzima novčanica u apoenu od 50 Eura, sa dva različita serijska broja S66515172255 i S66515172277, kao predmet izvršenja krivičnog djela.
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

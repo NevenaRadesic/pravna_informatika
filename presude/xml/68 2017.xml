@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        OSNOVNI SUD U KOTORU
+                    </FRBRauthor>
+                    <FRBRdate date="2017-04-03">
+                        2017-04-03
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 68/2017
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CRNA GORA
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Kotor" showAs="Osnovni sud u Kotoru" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Kotor" showAs="Osnovno državno tužilaštvo Kotor" />
+                <TLCPerson eId="sCakanovic" href="/ontology/person/sCakanovic" showAs="Sanja Čakanović" />
+                <TLCPerson eId="jGolub" href="/ontology/person/jGolub" showAs="Jadranka Golub" />
+                <TLCPerson eId="sM" href="/ontology/person/sM" showAs="S. M." />
+                <TLCPerson eId="aMarinovic" href="/ontology/person/aMarinovic" showAs="Ana Marinović" />
+                <TLCPerson eId="sLj" href="/ontology/person/sLj" showAs="S. Lj." />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    OSNOVNI SUD U KOTORU
+                </organization>
+                , kao nadležni prvostepeni krivični sud, po sudiji
+                <party id="sCakanovic" refersTo="#sCakanovic" as="#judge">
+                    Sanja Čakanović
+                </party>
+                , uz učešće zapisničara
+                <party id="jGolub" refersTo="#jGolub" as="#clerk">
+                    Jadranke Golub
+                </party>
+                , u krivičnom postupku protiv okrivljenog
+                <party id="sM" refersTo="#sM" as="#defendant">
+                    S.M.
+                </party>
+                , zbog krivičnog djela falsifikovanje novca u produženom trajanju iz
+                <ref href="/krivicni#art_258">
+                    čl. 258. st. 2 u vezi sa čl. 49 Krivičnog zakonika Crne Gore
+                </ref>
+                , koji se vodi po optužnici
+                <organization id="odt" refersTo="#odt">
+                    ODT Kotor
+                </organization>
+                Kt. br. 78/17 od 01.03.2017 godine, nakon glavnog i javnog pretresa održanog dana 29.03.2017 godine u prisustvu DT Kotor
+                <party id="aMarinovic" refersTo="#aMarinovic" as="#plantiff">
+                    Ane Marinović
+                </party>
+                , okrivljenog i branioca okrivljenog po službenoj dužnosti advokata
+                <party id="sLj" refersTo="#sLj" as="#lawyer">
+                    S. Lj.
+                </party>
+                , donio je i dana 03.04.2017. godine javno objavio sledeću:
+            </p>
+            <p>
+                P R E S U D U
+                Okrivljeni
+                <party id="sM" refersTo="#sM" as="#defendant">
+                    S. M.
+                </party>
+                JMBG ..., od oca V. i majke M., rođen ..., stalno nastanjen u L., K. P. ..., sa privremenim boravkom u B., L. ..., državljanin R. Srbije, neoženjen, bez djece, pravni birotehničar, sa završenom SSS, lošeg imovnog stanja, po sopstvenoj izjavi osuđivan, protiv koga se ne vodi krivični postupak za drugo krivično djelo,
+            </p>
+            <p>
+                K r i v j e,
+                Što je,
+                Dana, lo.o2.2ol7. godine i dana, 11.o2.2ol7. godine u B., pri čemu je bio uračunljiv, svjestan svoga djela, čije izvršenje je htio, iako je znao da je njegovo djelo zabranjeno, lažan novac stavio u opticaj i to tako što je prvo dana, lo.o2.2ol7. godine oko 2o,45 časova u prodavnici "M.i M. - V. R.", lažnu novčanicu od loo eura serijskog broja S35765426626, predao na kasi prilikom kupovine u marketu, nakon čega je dana, 11.o2.2ol7. godine oko o9,45 časova u poljoprivrednoj apoteci "A. B.", lažnu novčanicu od loo eura serijskog broja S3576542o996 predao na kasi prilikom kupovine.
+                - čime je učinio krivično djelo falsifikovanje novca u produženom trajanju iz
+                <ref href="/krivicni#art_258">
+                    čl. 258. st. 2. u vezi sa čl .49. Krivičnog zakonika Crne Gore
+                </ref>
+            </p>
+            <conclusions>
+                <p>
+                    Pa ga sud na osnovu naprijed navedene krivično-pravne odredbe i
+                    <ref href="/krivicni#art_4">
+                        čl. 4
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_5">
+                        čl. 5
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_13">
+                        čl. 13
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_15">
+                        čl. 15
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_32">
+                        čl. 32
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_36">
+                        čl. 36
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_42">
+                        čl. 42
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_45">
+                        čl. 45 st.1. tač. 3
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_46">
+                        čl. 46 st.1. tač. 3
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_51">
+                        čl. 51 Krivičnog zakonika Crne Gore
+                    </ref>
+                    i
+                    <ref href="/postupak#art_226">
+                        čl. 226
+                    </ref>
+                    ,
+                    <ref href="/postupak#art_227">
+                        čl. 227. st. 2
+                    </ref>
+                    ,
+                    <ref href="/postupak#art_229">
+                        čl. 229
+                    </ref>
+                    ,
+                    <ref href="/postupak#art_368">
+                        čl. 368
+                    </ref>
+                    i
+                    <ref href="/postupak#art_374">
+                        čl. 374 Zakonika o krivičnom postupku
+                    </ref>
+                    O S U Đ U J E
+                </p>
+                <p>
+                    Na kaznu zatvora u trajanju od 7 ( sedam ) mjeseci u koju kaznu mu se ima uračunati vrijeme koje je proveo u pritvoru i koji mu se računa počev od l3.o2.2ol7. godine od o9,45 časova i dalje.
+                </p>
+                <p>
+                    Obavezuje se okrivljeni da na ime troškova krivičnog postupka - sudskog paušala uplati iznos od 3o,oo eura, na žiro račun budžeta CG br.832-16-52, a u roku od 15 dana od dana pravosnažnosti presude, a s pozivom na gornji posl. br., dok će se o troškovima branioca po službenoj dužnosti adv. Lj.S. odlučiti posebnim rješenjem.
+                </p>
+                <p>
+                    Na osnovu
+                    <ref href="/krivicni#art_67">
+                        čl. 67
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_68">
+                        čl. 68
+                    </ref>
+                    i
+                    <ref href="/krivicni#art_75">
+                        čl. 75
+                    </ref>
+                    i
+                    <ref href="/krivicni#art_258">
+                        čl. 258. st. 5 Krivičnog zakonika Crne Gore
+                    </ref>
+                    sud izriče
+                </p>
+                <p>
+                    MJERU BEZBJEDNOSTI
+                    oduzimanja predmeta i to: 2 novčanice u apoenima od po 100,00 eura, ser. br. S35765426626 i ser br.S35765420996, a koje su novčanice privremeno oduzete uz potvrdu UP Grupe za suzbijanje krivičnih djela privrednog kriminaliteta – Jug Budva 47/2 br.242/17-1711 i potvrdu UP Grupe za suzbijanje krivičnih djela privrednog kriminaliteta – Jug Budva 47/2 br.242/17-1710 dana 12.02.2017 godine.
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

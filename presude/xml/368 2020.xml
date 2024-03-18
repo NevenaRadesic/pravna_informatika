@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        OSNOVNI SUD U NIKŠIĆU
+                    </FRBRauthor>
+                    <FRBRdate date="2021-03-02">
+                        2021-03-02
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 368/2020
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CRNA GORA
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Niksic" showAs="Osnovni sud u Nikšiću" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Niksic" showAs="Osnovno državno tužilaštvo Nikšić" />
+                <TLCPerson eId="sMusikic" href="/ontology/person/sMusikic" showAs="Sava Mušikić" />
+                <TLCPerson eId="lSofija" href="/ontology/person/lSofija" showAs="Lukovac Sofija" />
+                <TLCPerson eId="tD" href="/ontology/person/tD" showAs="T. D." />
+                <TLCPerson eId="nV" href="/ontology/person/nV" showAs="N. V." />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="plantiff" href="/ontology/role/plantiff" showAs="Plantiff" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    OSNOVNI SUD U NIKŠIĆU
+                </organization>
+                , kao nadležni prvostepeni krivični sud, po sudiji
+                <party id="sMusikic" refersTo="#sMusikic" as="#judge">
+                    Sava Mušikić
+                </party>
+                , u krivičnom predmetu protiv okrivljenog
+                <party id="tD" refersTo="#tD" as="#defendant">
+                    T. D.
+                </party>
+                , zbog krivičnog djela falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 2 Krivičnog zakonika Crne Gore
+                </ref>
+                , koji se vodi po optužnom predlogu
+                <organization id="odt" refersTo="#odt">
+                    ODT Nikšić
+                </organization>
+                Kt.br. 318/20 od 24.11.2020. godine, nakon održanog glavnog i javnog
+                pretresa dana 02.03.2021. godine, u prisustvu zastupnika ODT Nikšić
+                <party id="lSofija" refersTo="#lSofija" as="#plantiff">
+                    Lukovac Sofija
+                </party>
+                , okrivljenog i njegovog branioca, istog dana je donio i javno objavio sljedeću
+            </p>
+            <p>
+                P R E S U D U
+                Okrivljeni
+                <party id="tD" refersTo="#tD" as="#defendant">
+                    T. D.
+                </party>
+                JMBG ., od oca G. i majke M., rođene R., rođen ..godine u Nikšiću, sa prebivalištem u
+Nikšiću, ul. ... s. .., državljanin Crne Gore, pismen, završio srednju školu, nezaposlen, neoženjen, nema djece,
+srednjeg imovnog stanja, ranije neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo,
+            </p>
+            <p>
+                K r i v j e,
+                Što je,
+                Dana 11.06.2020. godine u Nikšiću, svjestan svog djela i htio njegovo izvršenje, stavio u opticaj lažnu
+novčanicu u apoenu od 50,00 € serijskog broja -----------------, na način što je navedenu novčanicu, za koju je
+znao da je lažna, predao maloljetnom A. S. tražeći od njega da mu u obližnjoj prodavnici, plaćajući tom
+novčanicom, kupi cigarete i flašu „Coca Cole“, pa je mldb A. S. u prodavnici – kiosku „M.“, vlasništvo S. N. u
+Osnovni Sud u Nikšiću
+K 368/2020
+02. Mart 2021
+ ulici G. , kupio četiri kutije cigareta i jednu flašu „Coca Cole“, koje je S. N. platio lažnom novčanicom nakon
+čega je kusur vratio okrivljenom T. D. u,
+ 
+čime je izvršio krivično djelo falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 2 Krivičnog zakonika Crne Gore
+                </ref>
+            </p>
+            <conclusions>
+                <p>
+                    Pa sud optuženog za navedeno krivično djelo primjenom
+                    <ref href="/krivicni#art_4">
+                        čl. 4 st. 2
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_32">
+                        čl. 32
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_36">
+                        čl. 36
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_36a">
+                        čl. 36a
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_42">
+                        čl. 42 st. 1
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_45">
+                        čl. 45 st. 1 tač. 3
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_46">
+                        čl. 46 st. 1 tač. 3 Krivičnog zakonika Crne Gore
+                    </ref>
+                    i
+                    <ref href="/postupak#art_226">
+                        čl. 226
+                    </ref>
+                    ,
+                    <ref href="/postupak#art_229">
+                        čl. 229
+                    </ref>
+                    ,
+                    <ref href="/postupak#art_374">
+                        čl. 374 st. 1 Zakonika o krivičnom postupku
+                    </ref>
+                    O S U Đ U J E
+                </p>
+                <p>
+                    Na kaznu zatvora u trajanju od 6 (šest) mjeseci, a koju će kaznu optuženi izdržavati u prostorijama gdje
+stanuje nakon pravosnažnosti ove odluke.
+U toku izvršenja kazne zatvora optuženi ne smije napuštati prostorije u kojima stanuje, osim u slučajevima
+propisanim zakonom kojim se uređuje izvršenje krivičnih sankcija.
+ 
+Ukoliko optuženi jednom u trajanju preko šest časova ili dva puta u trajanju do šest časova, samovoljno
+napusti prostorije u kojima stanuje, sud će odrediti da ostatak kazne zatvora izdrži u Upravi za izvršenje
+krivičnih sankcija Podgorica.
+ 
+Od optuženog se ODUZIMA lažan novac – novčanica u apoenu od 50,00 € serijski broj -----------------.
+ 
+Obavezuje se optuženi da na ime troškova krivičnog postupka plati novčani iznos od 200,50 € u roku od 15
+dana od dana pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, na žiro račun Osnovnog suda u
+Nikšiću broj 832-152-32 i sudu dostavi dokaz o izvršenoj uplati.
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>
