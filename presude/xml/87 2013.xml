@@ -24,9 +24,11 @@
                 <TLCPerson eId="jZeljka" href="/ontology/person/jZeljka" showAs="Jovović Željka" />
                 <TLCPerson eId="rDanijela" href="/ontology/person/rDanijela" showAs="Rajković Danijela" />
                 <TLCPerson eId="nM" href="/ontology/person/nM" showAs="N.M." />
+                <TLCPerson eId="bPavlicic" href="/ontology/person/bPavlicic" showAs="Biljana Pavličić" />
                 <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
                 <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
                 <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
             </references>
         </meta>
         <judgmentBody>
@@ -34,27 +36,31 @@
                 <organization id="os" refersTo="#os">
                     OSNOVNI SUD U PODGORICI
                 </organization>
-                , kao prvostepeni, krivični, po sudiji
+                , kao nadležni prvostepeni krivični sud, po sudiji
                 <party id="jZeljka" refersTo="#jZeljka" as="#judge">
-                    Jovović Željki
+                    Jovović Željka
                 </party>
-                , uz učešće 
+                , uz učešće zapisničara
                 <party id="rDanijela" refersTo="#rDanijela" as="#clerk">
-                    Rajković Danijele
+                    Rajković Danijela
                 </party>
-                kao zapisničara, u krivičnom predmetu protiv okrivljenog
+                , u krivičnom predmetu protiv okrivljenog
                 <party id="nM" refersTo="#nM" as="#defendant">
                     N.M.
                 </party>
-                , zbog krivičnog dijela falsifikovanje novca iz
+                , zbog krivičnog djela falsifikovanje novca iz
                 <ref href="/krivicni#art_258">
                     čl. 258 st. 4 Krivičnog zakonika
                 </ref>
-                rješavajući po optužnom predlogu 
+                , koji se vodi po optužnom predlogu
                 <organization id="odt" refersTo="#odt">
-                    Osnovnog državnog tužioca u Podgorici
+                    ODT Podgorica
                 </organization>
-                Kt. br. 1436/12 od 17. 01. 2013. godine, nakon odžanog glavnog javnog pretresa dana 09. 05. 2013. godine, u prisustvu zastupnika ODT Podgorica Biljane Pavličić i okrivljenog N.M., donio je i istog dana javno objavio
+                Kt.br. 1436/12 od 17. 01. 2013. godine, nakon održanog glavnog i javnog pretresa dana 09. 05. 2013. godine, u prisustvu zastupnika ODT Podgorica
+                <party id="bPavlicic" refersTo="#bPavlicic" as="#prosecutor">
+                    Biljane Pavličić
+                </party>
+                i okrivljenog N.M., donio je i istog dana javno objavio sljedeću
             </p>
             <p>
                 P R E S U D U
@@ -62,20 +68,20 @@
                 <party id="nM" refersTo="#nM" as="#defendant">
                     N.M.
                 </party>
-                , zv.M., JMB xxxxxxxxxxxxxx, od oca M. i majke M., rođene M., rođen 02. 05. 19xx. godine, u Podgorici, sa prebivalištem u Podgorici Donji Crnci bb, državljanin Crne Gore, nezaposlen, pismen, završio srednju školu, otac dvoje djece, lošeg imovnog stanja, osuđivan presudama Višeg suda u Podgorici K.br.125/06 od 28. 11. 2006. godine zbog krivičnog djela iz čl. 300/1 KZ RCG (1godina zatvora) i Osnovnog suda u Cetinje K. br. 340/09 od 07. 10. 2009. godine zbog krivičnog djela iz čl. 403 st. 1 KZ (3 mjeseca zatvora uslovno 1 godina)
+                JMB xxxxxxxxxxxxxx, od oca M. i majke M., rođene M., rođen 02. 05. 19xx. godine, u Podgorici, sa prebivalištem u Podgorici Donji Crnci bb, državljanin Crne Gore, nezaposlen, pismen, završio srednju školu, otac dvoje djece, lošeg imovnog stanja, osuđivan presudama Višeg suda u Podgorici K.br.125/06 od 28. 11. 2006. godine zbog krivičnog djela iz čl. 300/1 KZ RCG (1godina zatvora) i Osnovnog suda u Cetinje K. br. 340/09 od 07. 10. 2009. godine zbog krivičnog djela iz čl. 403 st. 1 KZ (3 mjeseca zatvora uslovno 1 godina)
             </p>
             <p>
-                Kriv je
-                Što je:
-                U drugoj polovini decembra 2010. godine u Podgorici, saznao da je lažan novac stavljen u opticaj, pa to nije prijavio, na način što mu je supruga N.B. predala novčanicu u apoenu od 100 eura serijskog broja 13493318596, za koju mu je rekla da je falsifikovana i stavljena u opticaj u pekari „Tonino“ u Podgorici, gdje je zaposlena kao prodavač, pa imajući u vidu to saznanje novčanicu nije prijavio nadležnom državnom organu, već je istu držao kod sebe, sve do dana 05.06.2012, godine kada je ista pronađena u njegovom poslovnom objektu u Spužu od strane ovlašćenih službenika Uprave policije, pri čemu je bio svjestan svog djela i htio je njegovo izvršenje, znajući da je njegovo djelo zabranjeno.
-                -čime je izvršio krivično djelo falsifikovanje novca iz
+                K r i v j e,
+                Što je,
+                U drugoj polovini decembra 2010. godine u Podgorici, saznao da je lažan novac stavljen u opticaj, pa to nije prijavio, na način što mu je supruga N.B. predala novčanicu u apoenu od 100 eura serijskog broja 13493318596, za koju mu je rekla da je falsifikovana i stavljena u opticaj u pekari „Tonino“ u Podgorici, gdje je zaposlena kao prodavač, pa imajući u vidu to saznanje novčanicu nije prijavio nadležnom državnom organu, već je istu držao kod sebe, sve do dana 05.06.2012, godine kada je ista pronađena u njegovom poslovnom objektu u Spužu od strane ovlašćenih službenika Uprave policije, pri čemu je bio svjestan svog djela i htio je njegovo izvršenje, znajući da je njegovo djelo zabranjeno,
+                - čime je učinio krivično djelo falsifikovanje novca iz
                 <ref href="/krivicni#art_258">
                     čl. 258 st. 4 Krivičnog zakonika
                 </ref>
             </p>
             <conclusions>
                 <p>
-                    Pa ga Sud na osnovu 
+                    Pa ga sud na osnovu
                     <ref href="/krivicni#art_4">
                         čl. 4 st. 2
                     </ref>
@@ -91,7 +97,7 @@
                     <ref href="/krivicni#art_42">
                         čl. 42 st. 1 Krivičnog zakonika
                     </ref>
-                    , te 
+                    ,
                     <ref href="/postupak#art_226">
                         čl. 226
                     </ref>
@@ -99,7 +105,7 @@
                     <ref href="/postupak#art_229">
                         čl. 229
                     </ref>
-                    i 
+                    i
                     <ref href="/postupak#art_374">
                         čl. 374 Zakonika o krivičnom postupku
                     </ref>

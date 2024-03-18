@@ -26,11 +26,11 @@ def process_text(text, file_path):
     """
     prompt = ChatPromptTemplate.from_messages(
         [
-            ("system", "Ti prevodiš tekst o presudama u akomaNtoso xml dokumente, primer ti je dat ispod.\n"
+            ("system", "Ti prevodiš tekst o presudama u Akoma Ntoso xml dokumente, primer ti je dat ispod.\n"
              +
              "PRIMER: \n {presuda} \n"
              +
-             "Molim vas da prevedete ovaj tekst u akomaNtoso XML format. Vratite mi validan XML dokument, i ništa drugo."
+             "Molim vas da prevedete ovaj tekst u Akoma Ntoso XML format. Vratite mi validan XML dokument, i ništa drugo."
              "OBAVEZNO koristiti reference kad se spominje 'Na osnovu' u conclusion, kao npr. \n {conclusion_example} \n"
              ""),
             ("user", "{input}")

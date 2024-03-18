@@ -23,8 +23,8 @@
                 <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Niksic" showAs="Osnovno državno tužilaštvo Nikšić" />
                 <TLCPerson eId="sMusikic" href="/ontology/person/sMusikic" showAs="Sava Mušikić" />
                 <TLCPerson eId="lSofija" href="/ontology/person/lSofija" showAs="Lukovac Sofija" />
+                <TLCPerson eId="nV" href="/ontology/person/nV" showAs="N.V." />
                 <TLCPerson eId="tD" href="/ontology/person/tD" showAs="T. D." />
-                <TLCPerson eId="nV" href="/ontology/person/nV" showAs="N. V." />
                 <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
                 <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
                 <TLCRole eId="plantiff" href="/ontology/role/plantiff" showAs="Plantiff" />
@@ -66,24 +66,20 @@
                 <party id="tD" refersTo="#tD" as="#defendant">
                     T. D.
                 </party>
-                JMBG ., od oca G. i majke M., rođene R., rođen ..godine u Nikšiću, sa prebivalištem u
-Nikšiću, ul. ... s. .., državljanin Crne Gore, pismen, završio srednju školu, nezaposlen, neoženjen, nema djece,
-srednjeg imovnog stanja, ranije neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo,
+                JMBG ., od oca G. i majke M., rođen ..godine u Nikšiću, stalno nastanjen u Nikšiću, D.bb,
+                državljanin Crne Gore, pismen, završio srednju školu, nezaposlen, neoženjen, nema djece,
+                srednjeg imovnog stanja, ranije neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo,
             </p>
             <p>
                 K r i v j e,
                 Što je,
                 Dana 11.06.2020. godine u Nikšiću, svjestan svog djela i htio njegovo izvršenje, stavio u opticaj lažnu
-novčanicu u apoenu od 50,00 € serijskog broja -----------------, na način što je navedenu novčanicu, za koju je
-znao da je lažna, predao maloljetnom A. S. tražeći od njega da mu u obližnjoj prodavnici, plaćajući tom
-novčanicom, kupi cigarete i flašu „Coca Cole“, pa je mldb A. S. u prodavnici – kiosku „M.“, vlasništvo S. N. u
-Osnovni Sud u Nikšiću
-K 368/2020
-02. Mart 2021
- ulici G. , kupio četiri kutije cigareta i jednu flašu „Coca Cole“, koje je S. N. platio lažnom novčanicom nakon
-čega je kusur vratio okrivljenom T. D. u,
- 
-čime je izvršio krivično djelo falsifikovanje novca iz
+                novčanicu u apoenu od 50,00 € serijskog broja -----------------, na način što je navedenu novčanicu, za koju je
+                znao da je lažna, predao maloljetnom A. S. tražeći od njega da mu u obližnjoj prodavnici, plaćajući tom
+                novčanicom, kupi cigarete i flašu „Coca Cole“, pa je mldb A. S. u prodavnici – kiosku „M.“, vlasništvo S. N. u
+                ulici G. , kupio četiri kutije cigareta i jednu flašu „Coca Cole“, koje je S. N. platio lažnom novčanicom nakon
+                čega je kusur vratio okrivljenom T. D. u,
+                - čime je učinio krivično djelo falsifikovanje novca iz
                 <ref href="/krivicni#art_258">
                     čl. 258 st. 2 Krivičnog zakonika Crne Gore
                 </ref>
@@ -134,19 +130,20 @@ K 368/2020
                 </p>
                 <p>
                     Na kaznu zatvora u trajanju od 6 (šest) mjeseci, a koju će kaznu optuženi izdržavati u prostorijama gdje
-stanuje nakon pravosnažnosti ove odluke.
-U toku izvršenja kazne zatvora optuženi ne smije napuštati prostorije u kojima stanuje, osim u slučajevima
-propisanim zakonom kojim se uređuje izvršenje krivičnih sankcija.
- 
-Ukoliko optuženi jednom u trajanju preko šest časova ili dva puta u trajanju do šest časova, samovoljno
-napusti prostorije u kojima stanuje, sud će odrediti da ostatak kazne zatvora izdrži u Upravi za izvršenje
-krivičnih sankcija Podgorica.
- 
-Od optuženog se ODUZIMA lažan novac – novčanica u apoenu od 50,00 € serijski broj -----------------.
- 
-Obavezuje se optuženi da na ime troškova krivičnog postupka plati novčani iznos od 200,50 € u roku od 15
-dana od dana pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, na žiro račun Osnovnog suda u
-Nikšiću broj 832-152-32 i sudu dostavi dokaz o izvršenoj uplati.
+                    stanuje nakon pravosnažnosti ove odluke.
+                    U toku izvršenja kazne zatvora optuženi ne smije napuštati prostorije u kojima stanuje, osim u slučajevima
+                    propisanim zakonom kojim se uređuje izvršenje krivičnih sankcija.
+                    Ukoliko optuženi jednom u trajanju preko šest časova ili dva puta u trajanju do šest časova, samovoljno
+                    napusti prostorije u kojima stanuje, sud će odrediti da ostatak kazne zatvora izdrži u Upravi za izvršenje
+                    krivičnih sankcija Podgorica.
+                </p>
+                <p>
+                    Od optuženog se ODUZIMA lažan novac – novčanica u apoenu od 50,00 € serijski broj -----------------.
+                </p>
+                <p>
+                    Obavezuje se optuženi da na ime troškova krivičnog postupka plati novčani iznos od 200,50 € u roku od 15
+                    dana od dana pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, na žiro račun Osnovnog suda u
+                    Nikšiću broj 832-152-32 i sudu dostavi dokaz o izvršenoj uplati.
                 </p>
             </conclusions>
         </judgmentBody>

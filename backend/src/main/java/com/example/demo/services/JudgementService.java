@@ -13,8 +13,8 @@ import java.nio.file.StandardOpenOption;
 public class JudgementService {
     public void addNewJudgement(FormData c) {
         // TODO: staviti relativnu putanju
-        String filePath = "C:\\Users\\Nevena\\Desktop\\pravna projekat\\nas pravo\\backend\\src\\main\\resources\\presude3.csv";
-        String s2 = "C:\\Users\\Nevena\\Desktop\\pravna projekat\\nas pravo\\backend\\src\\main\\java\\com\\example\\demo\\services\\DrDeviceService.java";
+        String filePath = "src/main/resources/presude3.csv";
+
         try {
             String fileContent = readFile(filePath);
             String updatedContent = fileContent + c.toCSV();

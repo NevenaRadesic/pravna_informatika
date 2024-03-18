@@ -42,7 +42,7 @@ public class FormData {
     }
 
     public String toCSV() {
-        String separator = ";";
+        String separator = "|";
         return "1" + separator + this.court + separator + this.judgementNumber + separator +
                 getCurrentFormattedDateWithDots() + separator + this.judge + separator + this.prosecutor + separator +
                 defendant + separator + "Falsifikovanje novca" + separator + this.crime.toLowerCase() + separator + "" + separator +
