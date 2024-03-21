@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd">
+	<act id="krivicni" name="Krivicni zakonik Crne Gore">
+        <meta>
+			<identification source="#palmirani">
+				<FRBRWork>
+					<FRBRthis value="/akn/krivicni/!main" />
+					<FRBRuri value="/krivicni" />
+					<FRBRdate date="2021-03-31" name="Generation" />
+					<FRBRauthor href="#congress" as="#author" />
+					<FRBRcountry value="cg" />
+					<FRBRnumber value="3/20" />
+					<FRBRname value="krivicniZakonikCrneGore" />
+					<FRBRprescriptive value="true" />
+					<FRBRauthoritative value="true" />
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRdate date="2021-03-31" name="Generation" />
+					<FRBRauthor href="#palmirani" as="#editor" />
+					<FRBRlanguage language="cg" />
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRdate date="2021-03-31" name="Generation" />
+					<FRBRauthor href="#palmirani" as="#editor" />
+					<FRBRformat value="xml" />
+				</FRBRManifestation>
+			</identification>
+            <!-- Sta je ovo 
+            sl - sluzbeni list
+            TODO: pomoc
+            
+            -->
+			<publication name="sl" date="2008-08-11" showAs="Službeni list Crne Gore" number="76/2008" />
+			<classification source="#palmirani">
+				<keyword value="krivicni" showAs="Krivicni" dictionary="CG" />
+			</classification>
+			<references>
+				<TLCOrganization eId="sl" href="/akn/rs/ontology/organization/sg" showAs="Službeni list Crne Gore" />
+			</references>
+		</meta>
+        <body>
+            <heading>
+				Krivični zakonik Crne Gore
+			</heading>
+
+            <chapter eId="chp_3">
+				<num>
+					III.
+				</num>
+				<heading>
+					KAZNE
+				</heading>
+				<section eId="chp_3_sec_2">  <!-- ovdje ne znam da li da pisem odmjeravanje kazne-->
+                    <num>
+                        2.
+                    </num>
+                    <heading>
+                        Odmjeravanje kazne
+                    </heading>
+					<article eId="art_42">
+						<num>
+							Član 42
+						</num>
+                        <heading>
+                            Opšta pravila o odmjeravanju kazne
+                        </heading>
+						<paragraph eId="art_42_para_1">
+							<point eId="art_42_para_1_point_1">
+								<num>
+									(1)
+								</num>
+								<content eId="art_42_para_1_point_1_content">
+									<p>
+                                        Sud će učiniocu krivičnog djela odmjeriti kaznu u granicama koje su zakonom propisane za to djelo, imajući u
+                                        vidu svrhu kažnjavanja i uzimajući u obzir sve okolnosti koje utiču da kazna bude manja ili veća (olakšavajuće i
+                                        otežavajuće okolnosti) , a naročito: stepen krivice, pobude iz kojih je djelo učinjeno, jačinu ugrožavanja ili povrede
+                                        zaštićenog dobra, okolnosti pod kojima je djelo učinjeno, raniji život učinioca, njegove lične prilike, njegovo držanje
+                                        poslije učinjenog krivičnog djela, a naročito njegov odnos prema žrtvi krivičnog djela kao i druge okolnosti koje se
+                                        odnose na ličnost učinioca.									
+                                    </p>
+								</content>
+							</point>
+							<point eId="art_42_para_1_point_2">
+								<num>
+									(2)
+								</num>
+								<content eId="art_42_para_1_point_2_content">
+									<p>
+                                        Pri odmjeravanju novčane kazne sud će posebno uzeti u obzir i imovno stanje učinioca
+									</p>
+								</content>
+							</point>
+							<point eId="art_42_para_1_point_3">
+								<num>
+									(3)
+								</num>
+								<content eId="art_42_para_1_point_3_content">
+									<p>
+										Okolnost koja je obilježje krivičnog djela ne može se uzeti u obzir i kao otežavajuća, odnosno olakšavajuća
+                                        okolnost, izuzev ako prelazi mjeru koja je potrebna za postojanje krivičnog djela ili određenog oblika krivičnog djela
+                                        ili ako postoje dvije ili više ovakvih okolnosti, pa je samo jedna dovoljna za postojanje težeg, odnosno lakšeg
+                                        oblika krivičnog djela.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+					</article>
+
+                    <article eId="art_49">
+						<num>
+							Član 49
+						</num>
+                        <heading>
+                            Produženo krivično djelo
+                        </heading>
+						<paragraph eId="art_49_para_1">
+							<point eId="art_49_para_1_point_1">
+								<num>
+									(1)
+								</num>
+								<content eId="art_49_para_1_point_1_content">
+									<p>
+                                        Produženo krivično djelo čini više istih ili istovrsnih krivičnih djela učinjenih u vremenskoj povezanosti od strane
+                                        istog učinioca i koja predstavljaju cjelinu zbog postojanja najmanje dvije od sledećih okolnosti: istovjetnosti
+                                        oštećenog, istovrsnosti predmeta djela, korišćenja iste situacije ili istog trajnog odnosa, jedinstva mjesta ili prostora
+                                        izvršenja djela ili jedinstvenog umišljaja učinioca.								
+                                    </p>
+								</content>
+							</point>
+							<point eId="art_49_para_1_point_2">
+								<num>
+									(2)
+								</num>
+								<content eId="art_49_para_1_point_2_content">
+									<p>
+                                         Krivična djela upravljena protiv ličnosti mogu činiti produženo krivično djelo samo ako su učinjena prema istom licu
+									</p>
+								</content>
+							</point>
+							<point eId="art_49_para_1_point_3">
+								<num>
+									(3)
+								</num>
+								<content eId="art_49_para_1_point_3_content">
+									<p>
+										Ne mogu činiti produženo krivično djelo ona djela koja po svojoj prirodi ne dopuštaju spajanje u jedno djelo.
+									</p>
+								</content>
+							</point>
+
+                            <point eId="art_49_para_1_point_4">
+								<num>
+									(4)
+								</num>
+								<content eId="art_49_para_1_point_4_content">
+									<p>
+										Ako produženo krivično djelo obuhvata lakše i teže oblike istog djela smatraće se da je produženim krivičnim
+                                        djelom učinjen najteži oblik od učinjenih djela
+									</p>
+								</content>
+							</point>
+
+                            <point eId="art_49_para_1_point_5">
+								<num>
+									(5)
+								</num>
+								<content eId="art_49_para_1_point_5_content">
+									<p>
+										Za produženo krivično djelo sud može izreći strožu kaznu od propisane ako produženo krivično djelo čine
+                                        najmanje tri krivična djela koja ispunjavaju uslove iz stava 1 ovog člana.
+									</p>
+								</content>
+							</point>
+
+                            <point eId="art_49_para_1_point_6">
+								<num>
+									(6)
+								</num>
+								<content eId="art_49_para_1_point_6_content">
+									<p>
+										Stroža kazna ne smije preći dvostruku mjeru propisane kazne ni dvadeset godina zatvora.
+									</p>
+								</content>
+							</point>
+
+                            <point eId="art_49_para_1_point_7">
+								<num>
+									(7)
+								</num>
+								<content eId="art_49_para_1_point_7_content">
+									<p>
+										Krivično djelo koje nije obuhvaćeno produženim krivičnim djelom u pravosnažnoj sudskoj presudi predstavlja
+                                        posebno krivično djelo, odnosno ulazi u sastav posebnog produženog krivičnog djela.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+            <chapter eId="chp_4">
+				<num>
+					IV.
+				</num>
+				<heading>
+					MJERE UPOZORENjA
+				</heading>
+				<section eId="chp_4_sec_1">
+                    <num>
+                        1.
+                    </num>
+                    <heading>
+                        Uslovna osuda i sudska opomena
+                    </heading>
+					<article eId="art_53">
+						<num>
+							Član 53
+						</num>
+                        <heading>
+                            Uslovna osuda
+                        </heading>
+						<paragraph eId="art_53_para_1">
+							<point eId="art_53_para_1_point_1">
+								<num>
+									(1)
+								</num>
+								<content eId="art_53_para_1_point_1_content">
+									<p>
+                                        Uslovnom osudom sud učinocu krivičnog djela utvrđuje kaznu i istovremeno određuje da se ona neće izvršiti,
+                                        ako osuđeni za vrijeme koje odredi sud, a koje ne može biti kraće od jedne niti duže od pet godina (vrijeme
+                                        provjeravanja) ne učini novo krivično djelo.									
+                                    </p>
+								</content>
+							</point>
+							<point eId="art_53_para_1_point_2">
+								<num>
+									(2)
+								</num>
+								<content eId="art_53_para_1_point_2_content">
+									<p>
+                                        Sud može u uslovnoj osudi odrediti da će se kazna izvršiti i ako osuđeni u određenom roku ne vrati imovinsku
+                                        korist pribavljenu izvršenjem krivičnog djela, ne naknadi štetu koju je prouzrokovao krivičnim djelom ili ne ispuni
+                                        druge obaveze predviđene u krivičnopravnim odredbama. Rok za ispunjenje tih obaveza utvrđuje sud u okviru
+                                        određenog vremena provjeravanja.
+									</p>
+								</content>
+							</point>
+							<point eId="art_53_para_1_point_3">
+								<num>
+									(3)
+								</num>
+								<content eId="art_53_para_1_point_3_content">
+									<p>
+										Mjere bezbjednosti, izrečene uz uslovnu osudu, izvršavaju se
+									</p>
+								</content>
+							</point>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+            <chapter eId="chp_5">
+				<num>
+					V.
+				</num>
+				<heading>
+					MJERE BEZBJEDNOSTI
+				</heading>
+				<section eId="chp_5_sec_1">
+                    <num>
+                        1.
+                    </num>
+					<article eId="art_75">
+						<num>
+							Član 75
+						</num>
+                        <heading>
+                            Oduzimanje predmeta
+                        </heading>
+						<paragraph eId="art_75_para_1">
+							<point eId="art_75_para_1_point_1">
+								<num>
+									(1)
+								</num>
+								<content eId="art_75_para_1_point_1_content">
+									<p>
+                                        Predmeti koji su upotrijebljeni ili su bili namijenjeni za izvršenje krivičnog djela ili koji su nastali izvršenjem
+                                        krivičnog djela mogu se oduzeti, ako su svojina učinioca.									
+                                    </p>
+								</content>
+							</point>
+							<point eId="art_75_para_1_point_2">
+								<num>
+									(2)
+								</num>
+								<content eId="art_75_para_1_point_2_content">
+									<p>
+                                        Predmeti iz stava 1 ovog člana mogu se oduzeti i kad nijesu svojina učinioca, ako to zahtijevaju razlozi
+                                        bezbjednosti ljudi ili imovine ili razlozi morala ili kada i dalje postoji opasnost da će biti upotrijebljeni za izvršenje
+                                        krivičnog djela, a time se ne dira u pravo trećih lica na naknadu štete od učinioca.
+									</p>
+								</content>
+							</point>
+							<point eId="art_75_para_1_point_3">
+								<num>
+									(3)
+								</num>
+								<content eId="art_75_para_1_point_3_content">
+									<p>
+										Zakonom se može odrediti obavezno oduzimanje predmeta i uslovi za njihovo oduzimanje.
+									</p>
+								</content>
+							</point>
+                            <point eId="art_75_para_1_point_4">
+								<num>
+									(4)
+								</num>
+								<content eId="art_75_para_1_point_4_content">
+									<p>
+										Zakonom se može odrediti obavezno uništavanje oduzetih predmeta.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+            <chapter eId="chp_23">   <!-- TODO: Chapter se racuna relativno od pocetka -->
+                <num>
+					XXIII.
+				</num>
+                <heading>
+                    KRIVIČNA DJELA PROTIV PLATNOG PROMETA I PRIVREDNOG POSLOVANjA
+                </heading>
+
+                <section eId="chp_23_sec_1">
+                    <heading>
+                        Falsifikovanje novca
+                    </heading>
+                    <article eId="art_258">
+                        <num>
+                            Član 258
+                        </num>
+                        <paragraph eId="art_258_para_1">
+                            <point eId="art_258_para_1_point_1">
+                                <num>
+									1)
+								</num>
+                                <content eId="art_258_para_1_point_1_content">
+                                    <p>
+                                        Ko napravi lažan novac u namjeri da ga stavi u opticaj kao pravi ili ko u istoj namjeri preinači pravi novac, kazniće se zatvorom od dvije do dvanaest godina.
+                                    </p>
+                                </content>
+                            </point>
+
+                            <point eId="art_258_para_1_point_2">
+                                <num>
+									2)
+								</num>
+                                <content eId="art_258_para_1_point_2_content">
+                                    <p>
+                                        Ko pribavlja, drži ili prenosi lažan novac u namjeri da ga stavi u opticaj kao pravi ili ko lažan novac stavlja u opticaj, kazniće se zatvorom od dvije do deset godina.
+                                    </p>
+                                </content>
+                            </point>
+
+                            <point eId="art_258_para_1_point_3">
+                                <num>
+									3)
+								</num>
+                                <content eId="art_258_para_1_point_3_content">
+                                    <p>
+                                        Ako je djelom iz st. 
+                                        <ref href="/krivicni#art_258_para_1_point_1">
+											1
+										</ref>
+                                        i 
+                                        <ref href="/krivicni#art_258_para_1_point_2">
+											2
+										</ref>
+                                        
+                                        ovog člana napravljen, preinačen, stavljen u promet ili pribavljen lažan novac u iznosu koji prelazi petnaest hiljada eura, odnosno odgovarajući iznos u stranom novcu, učinilac će se kazniti zatvorom od pet do petnaest godina.
+                                    </p>
+                                </content>
+                            </point>
+
+                            <point eId="art_258_para_1_point_4">
+                                <num>
+									4)
+								</num>
+                                <content eId="art_258_para_1_point_4_content">
+                                    <p>
+                                        Ko lažan novac koji je primio kao pravi, pa saznavši da je lažan, stavi u opticaj ili ko zna da je načinjen lažan novac ili da je lažan novac stavljen u opticaj, pa to ne prijavi, kazniće se novčanom kaznom ili zatvorom do jedne godine.
+                                    </p>
+                                </content>
+                            </point>
+
+                            <point eId="art_258_para_1_point_5">
+                                <num>
+									5)
+								</num>
+                                <content eId="art_258_para_1_point_5_content">
+                                    <p>
+                                        Lažan novac oduzeće se.
+                                    </p>
+                                </content>
+                            </point>
+
+                            <point eId="art_258_para_1_point_6">
+                                <num>
+									6)
+								</num>
+                                <content eId="art_258_para_1_point_6_content">
+                                    <p>
+                                        Lažnim novcem, u smislu ovog krivičnog djela, smatra se i novac izrađen na način i od materijala kao pravi novac, suprotno propisima kojima se uređuje izrada novca.
+                                    </p>
+                                </content>
+                            </point>
+                        </paragraph>    
+                    </article>
+                </section>
+            </chapter>
+        </body>
+    </act>
+</akomaNtoso>
