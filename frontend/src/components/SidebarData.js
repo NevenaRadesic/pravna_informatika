@@ -10,19 +10,25 @@ export const SidebarData = [
   {
     title: 'Zakoni',
     path: '/law',
-    icon: <FaIcons.FaBook className='icon'/>,
+    icon: <FaIcons.FaBook className='icon' style={{ color: "#4a5759" }} />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'PDF zakona',
+    path: '/law',
+    icon: <FaIcons.FaBook className='icon' style={{ color: "#4a5759" }} />,
     cName: 'nav-text'
   },
   {
     title: 'Presude',
     path: '/judgement',
-    icon: <ImIcons.ImHammer2 className='icon'/>,
+    icon: <ImIcons.ImHammer2 className='icon' style={{ color: "#4a5759" }}/>,
     cName: 'nav-text'
   },
   {
     title: 'Nova presuda',
     path: '/add',
-    icon: <FaIcons.FaPlus className='icon'/>,
+    icon: <FaIcons.FaPlus className='icon' style={{ color: "#4a5759" }} />,
     cName: 'nav-text'
   },
   

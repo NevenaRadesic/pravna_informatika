@@ -142,16 +142,19 @@ function AddJudgement() {
 
   
   return (
-    <div className="form-container" style={{ marginTop: '20px' }}>
+    <div className="form-container" style={{ marginTop: '20px', marginLeft: '300px' }}>
       <form>
         <div className='container'>
           <div className='row'>
+            
             <div className='col-2'></div>
             <div className='col-10'>
 
-
               <div className="container">
+                
+
                 <div className='row'>
+                  <h3 style={{marginBottom: '30px'}}>Dodaj presudu</h3>
 
                   <div className='col-5'>
                     <select  defaultValue={'DEFAULT'} className="form-select" id="floatingSelect" aria-label="Sud" 
@@ -274,7 +277,7 @@ function AddJudgement() {
                     </select>
                   </div>
                   <div className='col-2'>
-                    <button type="button" className='btn btn-primary' style={{ 'marginTop': '7px' }} onClick={addBanknote}>Dodaj</button>
+                    <button type="button" className='btn' style={{ 'marginTop': '7px', backgroundColor: '#71a870', color: '#fff' }} onClick={addBanknote}>Dodaj</button>
                   </div>
                 </div>
 
@@ -304,7 +307,7 @@ function AddJudgement() {
                 </div>
                 <br/>
                 <div className='row'>
-                  <button className='btn btn-primary' type="button" onClick={handleSubmit} style={{ width: '23%', marginLeft: '1%' }}>
+                  <button className='btn' type="button" onClick={handleSubmit} style={{ width: '23%', marginLeft: '1%', backgroundColor: '#71a870', color: '#fff' }}>
                     Submit
                   </button>
                 </div>

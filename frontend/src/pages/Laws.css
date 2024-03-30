@@ -2,5 +2,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%; /* Optional: set a specific height, adjust as needed */
+    height: 50%;
   }
+
+.content {
+  display: flex;
+}
+
+.point > .num, .chapter > .num, .section > .num {
+  /* float: left; */
+  padding-right: 0px;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 30px;
+  /* color: #71a870; */
+}
+
+.body > .heading {
+  /* make it h1 */
+  font-size: 3rem;
+  
+}
+
+.law-text {
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal;
+  /* justify text */
+  text-align: justify;
+  padding: 2% 2% 2% 2%;
+}
+
+.p {
+  margin-left: 7px;
+}

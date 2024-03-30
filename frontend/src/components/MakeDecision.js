@@ -47,7 +47,7 @@ const MakeDecision = ({ input, total }) => {
                         </div>
                     </div>
                     <div className='row'>
-                        <button className='btn btn-primary' style={{ marginLeft: '54%', width: '20%' }} onClick={saveJudgement}>Sačuvaj presudu</button>
+                        <button className='btn' style={{ marginLeft: '54%', width: '20%', backgroundColor: '#71a870', color: '#fff' }} onClick={saveJudgement}>Sačuvaj presudu</button>
                     </div>
                     <div className='row'>
                         <div style={{height: '100px'}}></div>

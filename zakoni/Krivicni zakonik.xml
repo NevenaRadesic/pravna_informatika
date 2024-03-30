@@ -25,11 +25,6 @@
 					<FRBRformat value="xml" />
 				</FRBRManifestation>
 			</identification>
-            <!-- Sta je ovo 
-            sl - sluzbeni list
-            TODO: pomoc
-            
-            -->
 			<publication name="sl" date="2008-08-11" showAs="Službeni list Crne Gore" number="76/2008" />
 			<classification source="#palmirani">
 				<keyword value="krivicni" showAs="Krivicni" dictionary="CG" />
@@ -50,7 +45,7 @@
 				<heading>
 					KAZNE
 				</heading>
-				<section eId="chp_3_sec_2">  <!-- ovdje ne znam da li da pisem odmjeravanje kazne-->
+				<section eId="chp_3_sec_2">
                     <num>
                         2.
                     </num>
@@ -267,9 +262,6 @@
 					MJERE BEZBJEDNOSTI
 				</heading>
 				<section eId="chp_5_sec_1">
-                    <num>
-                        1.
-                    </num>
 					<article eId="art_75">
 						<num>
 							Član 75
@@ -325,7 +317,7 @@
 					</article>
 				</section>
 			</chapter>
-            <chapter eId="chp_23">   <!-- TODO: Chapter se racuna relativno od pocetka -->
+            <chapter eId="chp_23">
                 <num>
 					XXIII.
 				</num>
@@ -334,13 +326,13 @@
                 </heading>
 
                 <section eId="chp_23_sec_1">
+					<num>
+						Član 258
+					</num>
                     <heading>
                         Falsifikovanje novca
                     </heading>
                     <article eId="art_258">
-                        <num>
-                            Član 258
-                        </num>
                         <paragraph eId="art_258_para_1">
                             <point eId="art_258_para_1_point_1">
                                 <num>
@@ -369,18 +361,18 @@
 									3)
 								</num>
                                 <content eId="art_258_para_1_point_3_content">
-                                    <p>
-                                        Ako je djelom iz st. 
-                                        <ref href="/krivicni#art_258_para_1_point_1">
-											1
-										</ref>
-                                        i 
-                                        <ref href="/krivicni#art_258_para_1_point_2">
-											2
-										</ref>
-                                        
-                                        ovog člana napravljen, preinačen, stavljen u promet ili pribavljen lažan novac u iznosu koji prelazi petnaest hiljada eura, odnosno odgovarajući iznos u stranom novcu, učinilac će se kazniti zatvorom od pet do petnaest godina.
-                                    </p>
+									<p>
+										Ako je djelom iz st.
+									</p>
+									<ref href="/krivicni#art_258_para_1_point_1"> 1 </ref>
+
+									<p> i </p>
+									<ref href="/krivicni#art_258_para_1_point_2">
+										2
+									</ref>
+
+									ovog člana napravljen, preinačen, stavljen u promet ili pribavljen lažan novac u iznosu koji prelazi petnaest hiljada eura, odnosno odgovarajući iznos u stranom novcu, učinilac će se kazniti zatvorom od pet do petnaest godina.
+
                                 </content>
                             </point>
 

@@ -7,18 +7,23 @@ import com.example.demo.jcolibri.App;
 import com.example.demo.jcolibri.CaseDescription;
 import com.example.demo.services.DrDeviceService;
 import com.example.demo.services.JudgementService;
+import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.opencsv.bean.CsvToBeanBuilder;
-
 import java.io.FileReader;
-import java.nio.file.Path;
+import java.io.IOException;
+
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -61,5 +66,13 @@ public class Controller {
                     .parse();
             return caseRecords;
         }
+    }
+
+    @GetMapping("/law-akoma-ntoso")
+    public String getAkomaNtoso() throws IOException {
+        String relativePath = "zakoni/Krivicni zakonik.xml";
+        List<String> lines = Files.readAllLines(Paths.get(relativePath), StandardCharsets.UTF_8);
+        var line = String.join("\n", lines);
+        return line;
     }
 }

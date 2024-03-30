@@ -1,0 +1,32 @@
+
+.judgment-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e3d5cabf;
+    border-radius: 8px !important;
+}
+
+.judgment-table > * {
+    border-bottom: 1px solid #e3d5ca;
+}
+
+.judgment-table tr:last-child td:first-child {
+    border-radius: 10px !important;
+}
+    
+.judgment-table tr:last-child td:last-child {
+    border-radius: 10px !important;
+}
+
+td, th {
+    padding: 10px;
+}
+
+td {
+    text-align: justify;
+}
+
+table tr:nth-child(odd) {
+    background-color: #e3d5ca54;
+    /* color: #fff; */
+}

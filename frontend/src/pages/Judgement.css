@@ -1,0 +1,28 @@
+.datumce {
+    margin-top: 5px;
+    font-family: 'Ariel', sans-serif;
+    font-size: small;
+    font-weight: 100 !important;
+}
+
+.card-header-mrnjau {
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    font-weight: 600 !important;
+}
+
+.card-body-mrnjau {
+    
+    justify-content: space-between;
+    
+}
+
+.card-body-mrnjau > p {
+    font-family: 'Ariel', sans-serif !important;
+    font-weight: 300 !important;
+}
+
+.selected-judgement {
+    background-color: #e3d5ca;
+}

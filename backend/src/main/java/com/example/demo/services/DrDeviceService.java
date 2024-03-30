@@ -21,14 +21,14 @@ public class DrDeviceService {
 
     public String makeDecisionBasedOnLaw(FormData data)
     {
-        this.runScript("../dr-device/clean.bat");
+        this.runScript("./dr-device/clean.bat");
         this.createFile(data);
-        this.runScript("../dr-device/start.bat");
+        this.runScript("./dr-device/start.bat");
         return this.createAnswer();
     }
 
     private String createAnswer() {
-        String content = readExport("../dr-device/export.rdf");
+        String content = readExport("./dr-device/export.rdf");
         String finalResult = addCrime(content);
         finalResult = addPenalty(finalResult, content);
         return finalResult;
