@@ -17,8 +17,6 @@ const getSimilarJudgements = async (inputData, total) => {
     }
 
     const result = await response.json();
-    console.log(result);
-
     return result;
   } catch (error) {
     console.error('Error fetching data from the backend:', error);
@@ -46,10 +44,11 @@ const makeDecisionBasedOnLaw= async (inputData, total) => {
     }
 
     const result = await response.json();
+    console.log(result + " je rezultat");
     return result.content;
   } catch (error) {
     console.error('Error fetching data from the backend:', error);
-    throw error; // Re-throw the error to be caught by the calling code
+    throw error;
   }  
 }
 
@@ -73,11 +72,9 @@ const addJudgement = async (decision, input, total) => {
       throw new Error('Network response was not ok');
     }
 
-    //const result = await response.json();
-    //return result.content;
   } catch (error) {
     console.error('Error fetching data from the backend:', error);
-    throw error; // Re-throw the error to be caught by the calling code
+    throw error; 
   }  
 }
 
