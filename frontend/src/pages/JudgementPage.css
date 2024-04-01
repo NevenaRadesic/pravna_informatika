@@ -1,6 +1,7 @@
 
 .judgment-table {
     width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     border: 1px solid #e3d5cabf;
     border-radius: 8px !important;
@@ -24,6 +25,12 @@ td, th {
 
 td {
     text-align: justify;
+    max-width: 25vw;
+    min-width: 25vw;
+    width: 25vw;
+    /* make words wrap */
+    word-wrap: break-word;
+
 }
 
 table tr:nth-child(odd) {

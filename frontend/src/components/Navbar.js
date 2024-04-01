@@ -20,7 +20,7 @@ function Navbar() {
             
           <ul className='nav-menu-items'>
             <div className='navbar-header'>
-              PRAVNA INFORMATIKA
+              OSUDI.ME
             </div>
             
             {SidebarData.map((item, index) => {

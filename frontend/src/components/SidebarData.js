@@ -4,6 +4,7 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as GoIcons from "react-icons/go";
 import * as ImIcons  from "react-icons/im";
+import * as HiIcons from "react-icons/hi";
 
 
 export const SidebarData = [
@@ -15,8 +16,8 @@ export const SidebarData = [
   },
   {
     title: 'PDF zakona',
-    path: '/law',
-    icon: <FaIcons.FaBook className='icon' style={{ color: "#4a5759" }} />,
+    path: '/pdf-law',
+    icon: <HiIcons.HiDocument className='icon' style={{ color: "#4a5759" }} />,
     cName: 'nav-text'
   },
   {

@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 300px;
+    /* width: 500px; */
     height: 50%;
   }
 

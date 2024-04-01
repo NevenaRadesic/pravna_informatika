@@ -92,10 +92,15 @@ function Laws() {
   // scroll into view if
   useEffect(() => {
     console.log(location);
+    if (!location.hash) return;
     const targetId = location.hash.replace('#', '');
+    const targetElement = document.getElementById(targetId);
+    // if targetElement does not exist, send to home page
+    if (!targetElement) {
+      window.location.href = '/pdf-law';
+    }
   
     if (targetId) {
-      const targetElement = document.getElementById(targetId);
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }

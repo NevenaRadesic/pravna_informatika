@@ -7,6 +7,8 @@ import './JudgementPage.css';
 const JudgementView = ({judgement}) => {
 
     const parsePrimenjeniPropisi = (propisi) => {
+        if (!propisi) return;
+        console.log(propisi);
         // Splitting the string by semicolon to get individual parts
         const parts = propisi.split(';');
         
@@ -45,9 +47,9 @@ const JudgementView = ({judgement}) => {
                     <tr><th>Državljanstvo</th><td>{judgement.drzavljanstvo}</td></tr>
                     <tr><th>Broj optuženih</th><td>{judgement.brojOptuzenih}</td></tr>
                     <tr><th>Vrsta presude</th><td>{judgement.vrstaPresude}</td></tr>
+                    <tr><th>Primenjeni propisi</th><td>{parsePrimenjeniPropisi(judgement.primenjeniPropisi)}</td></tr>
                 </table>
             </div>
-            {/* <tr><th>Primenjeni propisi</strong> {judgement.primenjeniPropis</th><td>i(judgement.primenjeniPropisi)</td></tr>parsePrimenjeniPropis} */}
         </div>
     );
 }
