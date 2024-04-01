@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './AddJudgement.css';
 import * as IoIcons from "react-icons/io";
-import { FormData } from './FormData';
+import { FormData, exchangeRates } from './FormData';
 import ResultComponent from '../components/ResultComponent';
 import { getSimilarJudgements, makeDecisionBasedOnLaw } from '../services/judgementService';
 import MakeDecision from '../components/MakeDecision';
@@ -36,53 +36,23 @@ function AddJudgement() {
 
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchExchangeRates = async () => {
+      let data;
       try {
-        /*let apiUrl = "http://api.exchangeratesapi.io/v1/latest?access_key=d61ea9f6633b186949b583457770e326";
+        let apiUrl = "http://api.exchangeratesapi.io/v1/latest?access_key=d61ea9f6633b186949b583457770e326";
         const response = await fetch(apiUrl, {
           method: "GET",
         });
-        const data = await response.json();*/
-        let data = {
-            "success": true,
-            "timestamp": 1620386223,
-            "source": "EUR",
-            "rates": {
-                "BAM": 1.95,
-                "AZN": 107.750768,
-                "GBPALL": 141.659078,
-                "GBPAMD": 725.255305,
-                "GBPANG": 2.496633,
-                "GBPAOA": 909.923974,
-                "GBPARS": 130.481869,
-                "GBPAUD": 1.789173,
-                "GBPAWG": 2.503947,
-                "GBPAZN": 2.357994,
-                "GBPBAM": 2.253445,
-                "GBPBBD": 2.808295,
-                "GBPBDT": 117.867727,
-                "GBPBGN": 2.253678,
-                "GBPBHD": 0.524384,
-                "GBPBIF": 2747.310462,
-                "GBPBMD": 1.391082,
-                "GBPBND": 1.851765,
-                "GBPBOB": 9.589957,
-                "GBPBRL": 7.344636,
-        }
-        }
+        data = await response.json();
         setCurrencyDict(data);
         console.log(data);
       } catch (error) {
-        alert('Something went wrong', error);
-        console.log(error);
+        data = exchangeRates;
       }
     };
 
-    fetchData();
+    fetchExchangeRates();
 
-    /*return () => {
-      console.log('Component will unmount');
-    };*/
   }, []);
 
 
