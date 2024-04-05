@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Judgement from "./Judgement";
 
 import './JudgementPage.css';
+import { PdfComponent } from "../components/PdfComponent";
 
 
 const JudgementView = ({judgement}) => {
@@ -30,7 +31,13 @@ const JudgementView = ({judgement}) => {
     return (
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '70%'}}>
             <div>
-                <h3 style={{marginBottom: '40px'}}>Pregled presude</h3>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '40px' }}>
+                    <h3 style={{ margin: '0' }}>Pregled presude</h3>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <label style={{ marginRight: '10px' }}>Pogledaj PDF:</label>
+                        <PdfComponent judgementNumber={judgement.brojPresude} />
+                    </div>
+                </div>
                 <table className="judgment-table" style={{minWidth: '40vw'}}>
                     <tr><th>Broj Presude</th><td>{judgement.brojPresude}</td></tr>
                     <tr><th>Sud</th><td>{judgement.sud}</td></tr>

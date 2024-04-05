@@ -53,6 +53,14 @@ public class Controller {
 
     }
 
+    @PostMapping("/createJudgement")
+    public void createJudgement(@RequestBody String content) {
+        this.judgementService.createNewPDF(content);
+
+    }
+
+
+
     @GetMapping("/case-records")
     public List<CaseRecord> getCaseRecords() throws Exception {
         String filePath = "backend/src/main/resources/presude3.csv";

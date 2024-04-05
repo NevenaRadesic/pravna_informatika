@@ -13,7 +13,7 @@ import java.nio.file.StandardOpenOption;
 public class JudgementService {
     public void addNewJudgement(FormData c) {
         // TODO: staviti relativnu putanju
-        String filePath = "src/main/resources/presude3.csv";
+        String filePath = "backend/src/main/resources/presude3.csv";
 
         try {
             String fileContent = readFile(filePath);
@@ -42,4 +42,7 @@ public class JudgementService {
         }
     }
 
+    public void createNewPDF(String content) {
+        System.out.println(content);
+    }
 }

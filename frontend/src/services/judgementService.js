@@ -78,7 +78,29 @@ const addJudgement = async (decision, input, total) => {
   }  
 }
 
+const createJudgement = async (content) => {
+  try {
+    const response = await fetch('http://localhost:8080/createJudgement', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(content),
+      cache: 'default',
+    });
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+  } catch (error) {
+    console.error('Greska u cuvanju podataka:', error);
+    throw error; 
+  }  
+}
 
 
 
-  export {getSimilarJudgements, makeDecisionBasedOnLaw, addJudgement};
+
+  export {getSimilarJudgements, makeDecisionBasedOnLaw, addJudgement, createJudgement};

@@ -16,7 +16,7 @@ export const PdfLaw  = () => {
     import.meta.url,
   ).toString();
 
-  return (
+  /*return (
     <div className="pdf-container">
       <Document file={pdfURL}
       onLoadSuccess={({ numPages })=>setNumPages(numPages)}
@@ -28,4 +28,14 @@ export const PdfLaw  = () => {
       </Document>
     </div>
   )
-}
+}*/
+return (
+  <div className="pdf-container">
+    <Document file={pdfURL} onLoadSuccess={({ numPages })=>setNumPages(numPages)}>
+      {Array.from({ length: numPages }, (_, index) => (
+        <Page key={index + 1} width={900} pageNumber={index + 1} />
+      ))}
+    </Document>
+  </div>
+);
+};
