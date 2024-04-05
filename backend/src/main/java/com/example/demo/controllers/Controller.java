@@ -1,18 +1,14 @@
 package com.example.demo.controllers;
 
 import com.example.demo.dto.CaseRecord;
+import com.example.demo.dto.CreateJudgementDTO;
 import com.example.demo.dto.FormData;
 import com.example.demo.dto.StringData;
 import com.example.demo.jcolibri.App;
-import com.example.demo.jcolibri.CaseDescription;
 import com.example.demo.services.DrDeviceService;
 import com.example.demo.services.JudgementService;
 import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.UrlResource;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.opencsv.bean.CsvToBeanBuilder;
 import java.io.FileReader;
@@ -23,7 +19,6 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.nio.file.Files;
-import java.nio.file.Path;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -54,9 +49,15 @@ public class Controller {
     }
 
     @PostMapping("/createJudgement")
-    public void createJudgement(@RequestBody String content) {
-        this.judgementService.createNewPDF(content);
-
+    public void createJudgement(@RequestBody CreateJudgementDTO content) {
+//        System.out.println(content.getText());
+//        System.out.println(content.getId());
+//        this.judgementService.createAkomaNtoso(content);
+        try {
+            this.judgementService.createPdf(content);
+        } catch (Exception e) {
+            System.err.println("Error: " + e.getMessage());
+        }
     }
 
 

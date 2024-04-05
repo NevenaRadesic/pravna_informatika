@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        PRIVREDNI SUD CRNE GORE
+                    </FRBRauthor>
+                    <FRBRdate date="2019-04-25">
+                        2019-04-25
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 123123
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CRNA GORA
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="pscg" href="/ontology/organization/PrivredniSud.CrnaGora" showAs="Privredni sud Crne Gore" />
+                <TLCPerson eId="pperic" href="/ontology/person/pperic" showAs="Pera Peric" />
+                <TLCPerson eId="nnikolic" href="/ontology/person/nnikolic" showAs="Nikola Nikolic" />
+                <TLCPerson eId="mmarkovic" href="/ontology/person/mmarkovic" showAs="Marko Markovic" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="plantiff" href="/ontology/role/plantiff" showAs="Plantiff" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="pscg" refersTo="#pscg">
+                    PRIVREDNI SUD CRNE GORE
+                </organization>
+                , po sudiji
+                <party id="pperic" refersTo="#pperic" as="#judge">
+                    Pera Peric
+                </party>
+                , u krivičnom predmetu protiv optuženog
+                <party id="nnikolic" refersTo="#nnikolic" as="#defendant">
+                    Nikola Nikolic
+                </party>
+                , zbog krivičnog djela falsifikovanje novca - proizvodnja, u ukupnom iznosu od 251.24 evra, u prisustvu zastupnika Optužnice
+                <party id="mmarkovic" refersTo="#mmarkovic" as="#plantiff">
+                    Marko Markovic
+                </party>
+                , donio je i javno objavio
+            </p>
+            <p>
+                P R E S U D U
+                Optuženi
+                <party id="nnikolic" refersTo="#nnikolic" as="#defendant">
+                    Nikola Nikolic
+                </party>
+                , JMBG: 1231213123, rodjen 1221-12-11 u daskal sa prebivalistem u fdklasm, loseg materijalnog stanja, dosad neosuđivan, NIJE KRIV za djelo za koje se tereti, pa mu sud primjenom
+                <ref href="/krivicni#art_2">
+                    čl. 2
+                </ref>
+                izriče OSUDJUJUCA presudu.
+            </p>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

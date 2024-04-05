@@ -10,11 +10,11 @@ const ResultComponent = ({ resultData }) => {
     <div className='container'>
       <br></br>
       <br></br>
-      <div className='row'>
+      <div>
         
-        <div className='col-1' style={{}}>
+        <div style={{width: '100%'}}>
           <h5>Slične presude:</h5>
-          <table className="table">
+          <table className='table' style={{width: '100%'}}>
             <thead className="thead-dark">
               <tr>
                 <th style={{width: '20px'}}>Sličnost</th>
@@ -37,7 +37,7 @@ const ResultComponent = ({ resultData }) => {
           <PdfComponent></PdfComponent>
          
         </div>
-        <div className='col-3' style={{}}>
+        <div style={{}}>
           <h5>Preporuka na osnovu zakona:</h5>
           <p>{resultData.law}</p>
         </div>  

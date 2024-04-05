@@ -17,4 +17,16 @@
   font-size: 3rem;
 }
 
+.ReactModalPortal {
+  z-index: 1000;
+}
+
+.ReactModal__Overlay 
+.ReactModal__Overlay--after-open {
+  z-index: 1000;
+}
+
+label {
+  z-index: 0;
+}
 

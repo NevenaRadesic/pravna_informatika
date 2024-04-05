@@ -40,7 +40,7 @@ public class CaseDescription implements CaseComponent {
 	private boolean extendedCriminalActivity;
 	private FinancialStatus financialStatus;
 	private String nationality;
-	private List<String> primenjeniPropisi;
+	private String primenjeniPropisi;
 
 
 //	TODO: neki atributi nisu postavljeni
@@ -56,6 +56,7 @@ public class CaseDescription implements CaseComponent {
 		this.amountOfMoney = f.getTotalAmount();
 		this.extendedCriminalActivity = f.isExtendedCriminalActivity();
 		this.financialStatus = FinancialStatus.valueOf(f.getFinancialStatus());
+		this.primenjeniPropisi = f.getAppliedRules();
 	}
 
 	public static String getCurrentFormattedDate() {

@@ -1,5 +1,6 @@
 
 const getSimilarJudgements = async (inputData, total) => {
+  let result;
   try {
     inputData.totalAmount = total;
     const response = await fetch('http://localhost:8080/similar', {
@@ -16,9 +17,10 @@ const getSimilarJudgements = async (inputData, total) => {
       throw new Error('Network response was not ok');
     }
 
-    const result = await response.json();
+    result = await response.json();
     return result;
   } catch (error) {
+    console.log(result);
     console.error('Error fetching data from the backend:', error);
     throw error;
   }

@@ -5,12 +5,28 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const MyModal = ({ isOpen, startData, pairData}) => {
+const MyModal = ({ isOpen, startData, pairData, setIsOpen}) => {
   
-  const [modalIsOpen, setModalIsOpen] = useState(isOpen);
-  useEffect(() => {
-    setModalIsOpen(isOpen);
-  }, [isOpen]);
+
+  // useEffect(() => {
+  //   setModalIsOpen(isOpen);
+  // }, [isOpen]);
+
+  const [formData, setFormData] = useState({
+    jmbg: '',
+    datumRodjenja: '',
+    mestoRodjenja: '',
+    prebivaliste: ''
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
 
   const divContentRef = useRef(null);
 
@@ -31,8 +47,10 @@ const MyModal = ({ isOpen, startData, pairData}) => {
 
   const saveJudgement = async () => {
     try {
-      const content = divContentRef.current.textContent;
+
+      const content = { text: divContentRef.current.textContent, id: startData.judgementNumber, html: divContentRef.current.innerHTML };
       createJudgement(content);
+      console.log(formData);
       toast.success('PDF presude je uspesno napravljen');
     } catch (error) {
       toast.error('Desila se greška.');
@@ -40,26 +58,70 @@ const MyModal = ({ isOpen, startData, pairData}) => {
     
   };
 
+
   function closeModal() {
-    setModalIsOpen(false);
+    // setModalIsOpen(false);
+    setIsOpen(false);
   }
 
+
   return (
-    <div>
+    <div style={{zIndex: '9999'}} >
       <Modal 
-        isOpen={modalIsOpen} 
+        isOpen={isOpen} 
         //onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         ariaHideApp={false}
 
         style={customStyles} 
         contentLabel="Example Modal"
+        
       >
+        <div className="container mt-12">
+          <div className="row">
+            <div className="col-md-6 offset-md-4" style={{ justifyContent: "center" }}>
+              <div>
+                <h4>Unesite podatke o optuženom</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br/>
+
+        <div className="container mt-12" style={{zIndex: '100'}}>
+          <div className="row">
+              <div className="row">
+                <div className="form-group col-md-3">
+                  <label htmlFor="jmbg">JMBG:</label>
+                  <input type="text" className="form-control" id="jmbg" name="jmbg" value={formData.jmbg} onChange={handleInputChange} placeholder="Unesite JMBG" />
+                </div>
+                <div className="form-group col-md-3">
+                  <label htmlFor="datumRodjenja">Datum rođenja:</label>
+                  <input type="date" className="form-control" id="datumRodjenja" name="datumRodjenja" value={formData.datumRodjenja} onChange={handleInputChange} />
+                </div>
+                <div className="form-group col-md-3">
+                  <label htmlFor="mestoRodjenja">Mesto rođenja:</label>
+                  <input type="text" className="form-control" id="mestoRodjenja" name="mestoRodjenja" value={formData.mestoRodjenja} onChange={handleInputChange} placeholder="Unesite mesto rođenja" />
+                </div>
+                <div className="form-group col-md-3">
+                  <label htmlFor="prebivaliste">Prebivalište:</label>
+                  <input type="text" className="form-control" id="prebivaliste" name="prebivaliste" value={formData.prebivaliste} onChange={handleInputChange} placeholder="Unesite prebivalište" />
+                </div>
+              </div>
+              
+          </div>
+        </div>
+
+        <br/>
+        <br/>
+          
+
+
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} ref={divContentRef} >
           <h3>{startData.court}</h3>
           <h3>{startData.judgementNumber}</h3>
           <p>25. April 2019</p>
-          <h7>U IME CRNE GORE</h7>
+          <h6>U IME CRNE GORE</h6>
           <div contenteditable="true" style={{ width: '90%' }}>
             <p>
             {startData.court}, po sudiji {startData.judge}, 
@@ -71,7 +133,8 @@ const MyModal = ({ isOpen, startData, pairData}) => {
               P R E S U D U
               </p>
               <p>
-              Optuženi: {startData.defendant}, {startData.financialStatus.toLowerCase()}g materijalnog stanja, 
+              Optuženi: {startData.defendant}, JMBG: {formData.jmbg}, rodjen {formData.datumRodjenja} u {formData.mestoRodjenja} sa 
+              prebivalistem u {formData.prebivaliste}, {startData.financialStatus.toLowerCase()}g materijalnog stanja, 
               dosad {startData.extendedCriminalActivity ? 'ne' : ''}osuđivan,</p> <p>{startData.extendedCriminalActivity ? 'NI' : ''}JE KRIV
               za djelo za koje se tereti, pa mu sud primjenom {pairData.appliedRules} izriče {pairData.judgementType.toUpperCase()} presudu.  
               </p>

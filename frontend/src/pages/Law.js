@@ -89,14 +89,14 @@ function Laws() {
   const [akomaNtosoData, setAkomaNtosoData] = useState(null);
   const location = useLocation();
 
-  // scroll into view if
-  useEffect(() => {
-    console.log(location);
+
+  function locateToElement() {
     if (!location.hash) return;
     const targetId = location.hash.replace('#', '');
     const targetElement = document.getElementById(targetId);
+    const contentRootEl = document.getElementById('law-root');
     // if targetElement does not exist, send to home page
-    if (!targetElement) {
+    if (!targetElement && contentRootEl) {
       window.location.href = '/pdf-law';
     }
   
@@ -105,7 +105,7 @@ function Laws() {
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     }
-  }, [akomaNtosoData]);
+  }
 
 
   useEffect(() => {
@@ -119,6 +119,7 @@ function Laws() {
         console.log(jsonData);
         jsonData = transformData(jsonData, 0);
         setAkomaNtosoData(jsonData);
+        locateToElement();
 
       })
       .catch((error) => {
@@ -134,10 +135,8 @@ function Laws() {
 
   let genComp = <GenericRenderer nodeData={akomaNtosoData} />;
 
-
-
   return (
-    <div style={{ marginLeft: '300px'}} className='law-text'>
+    <div style={{ marginLeft: '300px'}} className='law-text' id="law-root">
       {genComp}
     </div>
   );

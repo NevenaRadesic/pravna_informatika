@@ -53,7 +53,7 @@ public class CsvConnector implements Connector {
 				caseDescription.setNationality(values[13]);
 				caseDescription.setAccomplicesCount(Integer.parseInt(values[14]));
 				caseDescription.setVrstaPresude(values[15]);
-				caseDescription.setPrimenjeniPropisi(Arrays.asList(values[16].split(",")));
+				caseDescription.setPrimenjeniPropisi(values[16]);
 
 
 //				caseDescription.setCounterfeitingType(getCounterfeitingTypeFromString(values[8]));

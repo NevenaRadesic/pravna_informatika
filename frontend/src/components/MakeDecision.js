@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { addJudgement } from '../services/judgementService';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SuggestedItems from './SuggestedItems';
 
 import MyModal from './MyModal';
 
-const MakeDecision = ({ input, total }) => {
+const MakeDecision = ({ input, total, options }) => {
   const [decision, setDecision] = useState({
     appliedRules: '',
     judgementType: ''
@@ -14,6 +15,7 @@ const MakeDecision = ({ input, total }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [input2, setInput2] = React.useState(input);
 
+  const [selected, setSelected] = useState([]); // [ { name: 'cl. 45.', id: 1 }, { name: 'cl. 46.', id: 2 }
 
   function openModal() {
     setIsOpen(true);
@@ -29,7 +31,13 @@ const MakeDecision = ({ input, total }) => {
 
   const saveJudgement = async () => {
     try {
-      addJudgement(decision, input, total);
+      // append selected items to decision
+      let suggestedAppliedRules = selected.map((item) => item.name).join('; ');
+      let combinedRules = (decision.appliedRules ? decision.appliedRules + '; ' : '') + suggestedAppliedRules;
+      let newDecision = { ...decision, appliedRules: combinedRules };
+      setDecision(newDecision);
+
+      await addJudgement(newDecision, input, total);
       toast.success('Vaša presuda je uspešno sačuvana u bazi');
     } catch (error) {
       toast.error('Desila se greška.');
@@ -64,6 +72,11 @@ const MakeDecision = ({ input, total }) => {
                         </div>
                     </div>
                     <div className='row'>
+                      <div className='col-6'>
+                          <SuggestedItems options={options} setSelectedValueParent={setSelected}  />
+                      </div>
+                    </div>
+                    <div className='row' style={{marginTop: '20px'}}>
                         <div className='col-4'></div>
                         <div className='col-3'>
                           <button className='btn' style={{ backgroundColor: '#71a870', color: '#fff', marginLeft: '70px' }} onClick={saveJudgement}>Sačuvaj parametre</button>
@@ -73,7 +86,7 @@ const MakeDecision = ({ input, total }) => {
                         </div>
                     </div>
                   
-                    <MyModal isOpen={modalIsOpen} startData={input2} pairData={decision}></MyModal>
+                    <MyModal isOpen={modalIsOpen} setIsOpen={setIsOpen} startData={input2} pairData={decision}></MyModal>
 
                     <div className='row'>
                         <div style={{height: '100px'}}></div>

@@ -35,6 +35,7 @@ function AddJudgement() {
   const [resultData, setResultData] = useState({law: null, similar: null});
 
 
+
   useEffect(() => {
     const fetchExchangeRates = async () => {
       let data;
@@ -58,8 +59,11 @@ function AddJudgement() {
 
   useEffect(() => {
     let sum = 0;
+
     for (let i = 0; i < addedBanknotes.length; i++) {
-      let zadodati = addedBanknotes[i]['value'] * addedBanknotes[i]['quantity'] / currencyDict['rates'][addedBanknotes[i]['currency']]; 
+      let currencyMark = addedBanknotes[i]['currency'].toUpperCase();
+      console.log(addedBanknotes[i]['value'], addedBanknotes[i]['quantity'], addedBanknotes[i]['currency']);
+      let zadodati = addedBanknotes[i]['value'] * addedBanknotes[i]['quantity'] / currencyDict['rates'][currencyMark]; 
       sum += zadodati;
     }
     setTotal(sum);
@@ -97,7 +101,7 @@ function AddJudgement() {
     event.preventDefault();    
     console.log('total je', total);
     setTotal(parseFloat(total).toFixed(2));
-    let similarJudgemenets = await  getSimilarJudgements(inputData, total);
+    let similarJudgemenets = await getSimilarJudgements(inputData, total);
     let lawJudgement = await makeDecisionBasedOnLaw(inputData, total);
     console.log('Dobro ga je vratio' + lawJudgement);
     setResultData({law: lawJudgement, similar: similarJudgemenets});
@@ -251,7 +255,7 @@ function AddJudgement() {
                   </div>
                 </div>
 
-                <table className="table table-striped" style={{ 'width': '74.5%' }}>
+                <table >
                   <tbody>
                     {addedBanknotes.map((banknote, index) => (
                         <tr key={index}>
@@ -278,7 +282,7 @@ function AddJudgement() {
                 <br/>
                 <div className='row'>
                   <button className='btn' type="button" onClick={handleSubmit} style={{ width: '23%', marginLeft: '1%', backgroundColor: '#71a870', color: '#fff' }}>
-                    Submit
+                    Potvrdi
                   </button>
                 </div>
                 
@@ -288,7 +292,15 @@ function AddJudgement() {
         </div>
       </form>
       {resultData.law && <ResultComponent resultData={resultData} />}
-      {resultData.law && <MakeDecision input={inputData} total = {total}/>}
+      {resultData.law && 
+        <MakeDecision 
+              input={inputData} 
+              total={parseFloat(total)} 
+              options={
+                  [...new Set(resultData.similar.map(x => x.appliedRules.split(';')).flat())].map((rule, index) => ({ name: rule, id: index }))
+              }
+          />
+      } 
     </div>
   );
 }

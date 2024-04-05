@@ -39,6 +39,7 @@ public class FormData {
         this.extendedCriminalActivity = cd.isExtendedCriminalActivity();
         this.financialStatus = String.valueOf(cd.getFinancialStatus());
         this.totalAmount = cd.getAmountOfMoney();
+        this.appliedRules = cd.getPrimenjeniPropisi();
     }
 
     public String toCSV() {

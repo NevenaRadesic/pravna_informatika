@@ -23,7 +23,7 @@ td, th {
     padding: 10px;
 }
 
-td {
+.judgment-table td {
     text-align: justify;
     max-width: 25vw;
     min-width: 25vw;
@@ -33,7 +33,7 @@ td {
 
 }
 
-table tr:nth-child(odd) {
+.judgment-table tr:nth-child(odd) {
     background-color: #e3d5ca54;
     /* color: #fff; */
 }
