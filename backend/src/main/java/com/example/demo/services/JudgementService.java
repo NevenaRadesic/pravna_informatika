@@ -59,7 +59,11 @@ public class JudgementService {
 
     public void createAkomaNtoso(CreateJudgementDTO content) {
         // save to /presude/text/UUID.txt
-        String filePath = "./presude/text/" + content.getId() + ".txt";
+        String safeFileName = content.getId().replace("K ", "");
+        safeFileName = safeFileName.replace("/", "_");
+        safeFileName = safeFileName.replace(" ", "\\ ");
+
+        String filePath = "./presude/text/" + safeFileName + ".txt";
         try {
             Path path = Paths.get(filePath);
             Files.write(path, content.getText().getBytes());
@@ -81,11 +85,13 @@ public class JudgementService {
 
     }
 
-    public void createPdf(CreateJudgementDTO content) throws IOException {
-        System.out.println("todo: create pdf from content");
+    public String createPdf(CreateJudgementDTO content) throws IOException {
         String fileName = content.getId();
+        fileName = fileName.replace("K ", "");
+        fileName = fileName.replace("/", "_");
         fileName = fileName.replace(" ", "\\ ");
         String fullPath = "./presude/pdf/" + fileName + ".pdf";
+        System.out.println(fullPath);
         PdfWriter writer = new PdfWriter(Files.newOutputStream(Paths.get(fullPath)));
         PdfDocument pdfDoc = new PdfDocument(writer);
         pdfDoc.addNewPage();
@@ -101,17 +107,20 @@ public class JudgementService {
                 "</head><body><h1>Presuda</h1><p>" + content.getHtml() + "</p></body></html>";
 
         HtmlConverter.convertToPdf(htmlContent, pdfDoc.getWriter());
+        return fullPath;
     }
 
-    public void copyToFront(String fileName) {
-        String izvornaPutanja = "./presude/pdf/" + fileName + ".pdf";
-        String odredisnaPutanja = "./frontend/public/presude/" + fileName.replaceAll("[/ ]", "_") + ".pdf";
-        Path izvorna = Paths.get(izvornaPutanja);
+    public void copyToFront(String fullFilePath) {
+        // extract file name form full path
+        String fileName = fullFilePath.substring(fullFilePath.lastIndexOf("/") + 1);
+        String odredisnaPutanja = "./frontend/public/presude/" + fileName;
+        Path izvorna = Paths.get(fullFilePath);
         Path odredisna = Paths.get(odredisnaPutanja);
-
         try {
             Files.copy(izvorna, odredisna);
         } catch (IOException e) {
+            System.out.println("Izvorna putanja: " + izvorna);
+            System.out.println("Odredišna putanja: " + odredisna);
             System.out.println("Došlo je do greške prilikom kopiranja datoteke");
         }
     }

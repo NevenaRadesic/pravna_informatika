@@ -54,8 +54,8 @@ public class Controller {
 //        System.out.println(content.getId());
 //        this.judgementService.createAkomaNtoso(content);
         try {
-            this.judgementService.createPdf(content);
-            this.judgementService.copyToFront(content.getId());
+            String outPath = this.judgementService.createPdf(content);
+            this.judgementService.copyToFront(outPath);
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
         }

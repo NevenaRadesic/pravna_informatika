@@ -144,7 +144,7 @@ const MyModal = ({ isOpen, startData, pairData, setIsOpen}) => {
           
         </div>
         <div style={{ flexDirection: 'column', alignItems: 'right' }}>
-        <button style={{marginLeft:'75%', marginTop: '5px'}} className='btn btn-primary' onClick={saveJudgement}>Sacuvaj presudu</button>
+        <button style={{marginLeft:'75%', marginTop: '5px'}} className='btn btn-primary' onClick={saveJudgement}>Sačuvaj presudu</button>
         </div>
       </Modal>
 

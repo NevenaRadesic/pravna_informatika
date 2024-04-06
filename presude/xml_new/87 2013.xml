@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        OSNOVNI SUD U PODGORICI
+                    </FRBRauthor>
+                    <FRBRdate date="2013-05-09">
+                        2013-05-09
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 87/2013
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CRNA GORA
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo Podgorica" />
+                <TLCPerson eId="jZeljka" href="/ontology/person/jZeljka" showAs="Jovović Željka" />
+                <TLCPerson eId="dRajkovic" href="/ontology/person/dRajkovic" showAs="Rajković Danijela" />
+                <TLCPerson eId="nM" href="/ontology/person/nM" showAs="N.M." />
+                <TLCPerson eId="bPavlicic" href="/ontology/person/bPavlicic" showAs="Biljana Pavličić" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="plantiff" href="/ontology/role/plantiff" showAs="Plantiff" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    OSNOVNI SUD U PODGORICI
+                </organization>
+                , kao prvostepeni, krivični, po sudiji
+                <party id="jZeljka" refersTo="#jZeljka" as="#judge">
+                    Jovović Željka
+                </party>
+                , uz učešće
+                <party id="dRajkovic" refersTo="#dRajkovic" as="#clerk">
+                    Rajković Danijele
+                </party>
+                kao zapisničara, u krivičnom predmetu protiv okrivljenog
+                <party id="nM" refersTo="#nM" as="#defendant">
+                    N.M.
+                </party>
+                , zbog krivičnog dijela falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 4 Krivičnog zakonika
+                </ref>
+                rješavajući po optužnom predlogu
+                <organization id="odt" refersTo="#odt">
+                    Osnovnog državnog tužioca u Podgorici
+                </organization>
+                Kt. br. 1436/12 od 17. 01. 2013. godine, nakon odžanog glavnog javnog pretresa dana 09. 05. 2013. godine, u prisustvu zastupnika ODT Podgorica
+                <party id="bPavlicic" refersTo="#bPavlicic" as="#plantiff">
+                    Biljana Pavličić
+                </party>
+                i okrivljenog N.M., donio je i istog dana javno objavio
+            </p>
+            <p>
+                P R E S U D U
+                Okrivljeni:
+                <party id="nM" refersTo="#nM" as="#defendant">
+                    N.M.
+                </party>
+                , zv.M., JMB xxxxxxxxxxxxxx, od oca M. i majke M., rođene M., rođen 02. 05. 19xx. godine, u Podgorici, sa prebivalištem u Podgorici Donji Crnci bb, državljanin Crne Gore, nezaposlen, pismen, završio srednju školu, otac dvoje djece, lošeg imovnog stanja, osuđivan presudama Višeg suda u Podgorici K.br.125/06 od 28. 11. 2006. godine zbog krivičnog djela iz čl. 300/1 KZ RCG (1godina zatvora) i Osnovnog suda u Cetinje K. br. 340/09 od 07. 10. 2009. godine zbog krivičnog djela iz čl. 403 st. 1 KZ (3 mjeseca zatvora uslovno 1 godina)
+            </p>
+            <p>
+                Kriv je
+                Što je:
+                U drugoj polovini decembra 2010. godine u Podgorici, saznao da je lažan novac stavljen u opticaj, pa to nije prijavio, na način što mu je supruga N.B. predala novčanicu u apoenu od 100 eura serijskog broja 13493318596, za koju mu je rekla da je falsifikovana i stavljena u opticaj u pekari „Tonino“ u Podgorici, gdje je zaposlena kao prodavač, pa imajući u vidu to saznanje novčanicu nije prijavio nadležnom državnom organu, već je istu držao kod sebe, sve do dana 05.06.2012, godine kada je ista pronađena u njegovom poslovnom objektu u Spužu od strane ovlašćenih službenika Uprave policije, pri čemu je bio svjestan svog djela i htio je njegovo izvršenje, znajući da je njegovo djelo zabranjeno.
+                -čime je izvršio krivično djelo falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 4 Krivičnog zakonika
+                </ref>
+            </p>
+            <conclusions>
+                <p>
+                    Pa ga Sud na osnovu
+                    <ref href="/krivicni#art_4">
+                        čl. 4 st. 2
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_32">
+                        čl. 32
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_36">
+                        čl. 36
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_42">
+                        čl. 42 st. 1 Krivičnog zakonika
+                    </ref>
+                    , te
+                    <ref href="/postupak#art_226">
+                        čl. 226
+                    </ref>
+                    ,
+                    <ref href="/postupak#art_229">
+                        čl. 229
+                    </ref>
+                    i
+                    <ref href="/postupak#art_374">
+                        čl. 374 Zakonika o krivičnom postupku
+                    </ref>
+                    O S U Đ U J E
+                </p>
+                <p>
+                    Na kaznu zatvora u trajanju od 3 (tri) mjeseca, koju kaznu je dužan izdržati nakon pravosnažnosti presude.
+                </p>
+                <p>
+                    Obavezuje se okrivljeni da plati po osnovu troškova krivičnog postupka iznos od 30,00 eura, u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja.
+                </p>
+                <p>
+                    Na osnovu
+                    <ref href="/krivicni#art_75">
+                        čl. 75
+                    </ref>
+                    i
+                    <ref href="/krivicni#art_258">
+                        čl. 258 st. 5 Krivičnog zakonika
+                    </ref>
+                    okrivljenom se izriče MJERA BEZBJEDNOSTI trajnog oduzimanja novčanice u apoenu od 100 eura serijskog broja 13493318596, kao predmet izvršenja krivičnog djela
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        OSNOVNI SUD U PODGORICI
+                    </FRBRauthor>
+                    <FRBRdate date="2019-03-13">
+                        2019-03-13
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 822/2018
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CRNA GORA
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo Podgorica" />
+                <TLCPerson eId="zJovovic" href="/ontology/person/zJovovic" showAs="Željka Jovović" />
+                <TLCPerson eId="dRajkovic" href="/ontology/person/dRajkovic" showAs="Danijela Rajković" />
+                <TLCPerson eId="bO" href="/ontology/person/bO" showAs="B. O." />
+                <TLCPerson eId="iMedojevic" href="/ontology/person/iMedojevic" showAs="Ivan Medojević" />
+                <TLCPerson eId="lA" href="/ontology/person/lA" showAs="L. A." />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    OSNOVNI SUD U PODGORICI
+                </organization>
+                , po sutkinji
+                <party id="zJovovic" refersTo="#zJovovic" as="#judge">
+                    Željki Jovović
+                </party>
+                , uz učešće samostalne referentkinje
+                <party id="dRajkovic" refersTo="#dRajkovic" as="#clerk">
+                    Danijele Rajković
+                </party>
+                kao zapisničarke, u krivičnom predmetu protiv optuženog
+                <party id="bO" refersTo="#bO" as="#defendant">
+                    B. O.
+                </party>
+                , zbog produženog krivičnog djela falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 2 u vezi čl. 49 Krivičnog zakonika Crne Gore
+                </ref>
+                , rjašavajući po optužnici ODT-a Podgorica Kt. br. 46/18 od 14. 11. 2018. godine, nakon održanog glavnog i javnog pretresa u prisustvu zastupnika optužbe
+                <party id="iMedojevic" refersTo="#iMedojevic" as="#plantiff">
+                    Ivana Medojević
+                </party>
+                , optuženog B. O. i njegovog branioca adv.
+                <party id="lA" refersTo="#lA" as="#lawyer">
+                    L. A.
+                </party>
+                , dana 13. 03. 2019. godine donio je i javno objavio
+            </p>
+            <p>
+                P R E S U D U
+                Optuženi
+                <party id="bO" refersTo="#bO" as="#defendant">
+                    B. O.
+                </party>
+                JMB xxxxxxxxxxxxx, od oca V. i majke Lj., rođene M., rođen xx. xx. xxxx. godine u Č., Republika Srbija, sa prebivalištem u P., državljanin Crne Gore, neoženjen, bez djece, pismen, završio srednju medicinsku školu, po zanimanju radnik, lošeg imovnog stanja, neosuđivan.
+            </p>
+            <p>
+                Kriv je
+                Što je:
+                Dana 11. januara 2018. godine, u periodu od 16:00 do 18:00 časova, u Podgorici, svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, pribavio lažan novac u namjeri da ga stavi u opticaj kao pravi, a zatim ga u dva navrata stavio u opticaj, na način što je u blizini Autobuske stanice u Podgorici od jednog za sada nepoznatog lica pribavio lažnu novčanicu u apoenu od 100,00 eura, serijskog broja S35765421968, tako što je tom licu dao novac od 20,00 eura za označenu novčanicu, da bi zatim oko 16:00 časova došao do pekare "I." DOO, vlasništvo Đ. B., koja se nalazi u Bulevaru Pera Ćetkovića, gdje je od istog zatražio da kupi tri bureka i tri jogurta i predao mu označenu novčanicu, kako bi platio označene proizvode, ali je isti odmah utvrdio da novčanica nije prava i vratio mu je, nakon čega je istog dana oko 18:00 časova, došao u Ulicu Mitra Bakića i ušao u poslastičarsko-pekarski diskont "S." vlasništvo H. M., te od radnice u diskontu zatražio da kupi nož za rezanje pice, čija cijena je bila 08,00 eura, kojom prilikom joj je radi plaćanja predao istu novčanicu, pa kada mu je ista saopštila da nema novca u kasi, da bi mu vratila kusur, isti je tu novčanicu predao H. M., kako bi usitnio novac, koji je odmah posumnjao da se ne radi o pravnoj novčanici, iz kojeg razloga je u prodavnici zadržao optuženog, tako što je zaključao vrata prodavnice i pozvao policiju,
+                - čime je izvršio produženo krivično djelo falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 2 u vezi čl. 49 Krivičnog zakonika Crne Gore
+                </ref>
+            </p>
+            <conclusions>
+                <p>
+                    Pa sud okrivljenog na osnovu
+                    <ref href="/krivicni#art_4">
+                        čl. 4. st. 2
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_32">
+                        čl. 32
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_36">
+                        čl. 36
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_42">
+                        čl. 42 st. 1
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_45">
+                        čl. 45. st. 1 tač. 3
+                    </ref>
+                    i
+                    <ref href="/krivicni#art_46">
+                        čl. 46 st. 1 tač. 3 Krivičnog zakonika Crne Gore
+                    </ref>
+                    te
+                    <ref href="/postupak#art_226">
+                        čl. 226
+                    </ref>
+                    ,
+                    <ref href="/postupak#art_229">
+                        čl. 229
+                    </ref>
+                    i
+                    <ref href="/postupak#art_374">
+                        čl. 374 Zakonika o krivičnom postupku
+                    </ref>
+                    O S U Đ U J E
+                </p>
+                <p>
+                    Na kaznu zatvora u trajanju od 6 (šest) mjeseci, koju kaznu je dužan izdržati nakon pravosnažnosti presude.
+                </p>
+                <p>
+                    Na osnovu
+                    <ref href="/krivicni#art_75">
+                        čl. 75
+                    </ref>
+                    i
+                    <ref href="/krivicni#art_258">
+                        čl. 258 st. 5 Krivičnog zakonika Crne Gore
+                    </ref>
+                    optuženom se izriče MJERA BEZBJEDNOSTI trajnog oduzimanja novčanice u apoenu od 100,00 eura, serijskog broja S35765421968, kao predmeta izvršenja krivičnog djela.
+                </p>
+                <p>
+                    Obavezuje se optuženi da plati po osnovu troškova krivičnog postupka iznos od 30,00 eura, u roku od 15 dana po pravosnažnosti presude pod prijetnjom prinudnog izvršenja, dok će sud o troškovima koji se odnose na nagradu braniocu postavljenom po službenoj dužnosti, odlučiti posebnim rješenjem shodno čl. 227 st. 2 Zakonika o krivičnom postupku.
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

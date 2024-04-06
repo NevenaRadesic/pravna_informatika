@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        OSNOVNI SUD U ULCINJU
+                    </FRBRauthor>
+                    <FRBRdate date="2016-11-08">
+                        2016-11-08
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 110/2016
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CRNA GORA
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Ulcinj" showAs="Osnovni sud u Ulcinju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Ulcinj" showAs="Osnovno državno tužilaštvo Ulcinj" />
+                <TLCPerson eId="smirovic" href="/ontology/person/smirovic" showAs="Sanja Mirović" />
+                <TLCPerson eId="sMilena" href="/ontology/person/sMilena" showAs="Škrelja Milena" />
+                <TLCPerson eId="mS" href="/ontology/person/mS" showAs="M. S." />
+                <TLCPerson eId="dD" href="/ontology/person/dD" showAs="D. D." />
+                <TLCPerson eId="fResulbegovic" href="/ontology/person/fResulbegovic" showAs="Faruk Resulbegović" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+                <TLCRole eId="plantiff" href="/ontology/role/plantiff" showAs="Plantiff" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <organization id="os" refersTo="#os">
+                    OSNOVNI SUD U ULCINJU
+                </organization>
+                , kao nadležni prvostepeni krivični sud, po sudiji
+                <party id="smirovic" refersTo="#smirovic" as="#judge">
+                    Sanja Mirović
+                </party>
+                , uz učešće zapisničara
+                <party id="sMilena" refersTo="#sMilena" as="#clerk">
+                    Škrelja Milena
+                </party>
+                , u krivičnom predmetu protiv okrivljenog
+                <party id="mS" refersTo="#mS" as="#defendant">
+                    M.S.
+                </party>
+                , kojeg brani adv.
+                <party id="dD" refersTo="#dD" as="#lawyer">
+                    D.D.
+                </party>
+                , zbog krivičnog djela falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 4 Krivičnog zakonika Crne Gore
+                </ref>
+                , koji se vodi po optužnom predlogu
+                <organization id="odt" refersTo="#odt">
+                    ODT Ulcinj
+                </organization>
+                Kt.br. 63/16 od 18.04.2016. godine, nakon održanog glavnog i javnog pretresa dana 08.11.2016. godine, u prisustvu zastupnika optužbe Državnog tužioca u Ulcinju
+                <party id="fResulbegovic" refersTo="#fResulbegovic" as="#plantiff">
+                    Faruk Resulbegović
+                </party>
+                , a u odsustvu okrivljenog i njegovog branioca, istog dana je donio i javno objavio sljedeću
+            </p>
+            <p>
+                P R E S U D U
+                Okrivljeni
+                <party id="mS" refersTo="#mS" as="#defendant">
+                    M.S.
+                </party>
+                JMBG ., od oca V. i majke V., rođen ..godine u C., stalno nastanjen u B., ul.x. P. br. x, službenik SO B. – nadzornik,razveden,otac dvoje mldb.djece,pismen, sa završenom srednjom školom, srednjeg imovnog stanja, državljanin Crne Gore,neosuđivan,
+            </p>
+            <p>
+                K r i v j e,
+                Što je,
+                dana 09.04.2016. godine, oko 15,00 časova u ulici xx.N. na zelenoj pijaci u U., svjestan svoga djela čije izvršenje je htio i znajući da je njegovo djelo zabranjeno, lažan novac i to: tri novčanice u apoenima od po 100,00 eura, serijskih brojeva Sxxxxxxxxxxxxx, Sxxxxxxxxxxxxxx i Sxxxxxxxxxxxxxx, koje je primio kao prave, pa saznavši da su lažne, jednu od predmetnih novčanica stavio u opticaj na način što je predao M.G., prilikom plaćanja robe u iznosu od 25,00 eura,
+                -čime je izvršio krivično djelo falsifikovanje novca iz
+                <ref href="/krivicni#art_258">
+                    čl. 258 st. 4 Krivičnog zakonika Crne Gore
+                </ref>
+            </p>
+            <conclusions>
+                <p>
+                    Pa mu sud na osnovu naprijed navedene krivično-pravne odredbe i
+                    <ref href="/krivicni#art_4">
+                        čl. 4
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_5">
+                        čl. 5
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_13">
+                        čl. 13
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_15">
+                        čl. 15
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_32">
+                        čl. 32
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_36">
+                        čl. 36
+                    </ref>
+                    ,
+                    <ref href="/krivicni#art_42">
+                        čl. 42
+                    </ref>
+                    i
+                    <ref href="/krivicni#art_51">
+                        čl. 51 Krivičnog zakonika Crne Gore
+                    </ref>
+                    i
+                    <ref href="/postupak#art_226">
+                        čl. 226
+                    </ref>
+                    ,
+                    <ref href="/postupak#art_229">
+                        čl. 229
+                    </ref>
+                    ,
+                    <ref href="/postupak#art_239">
+                        čl. 239
+                    </ref>
+                    ,
+                    <ref href="/postupak#art_368">
+                        čl. 368
+                    </ref>
+                    i
+                    <ref href="/postupak#art_374">
+                        čl. 374 Zakonika o krivičnom postupku
+                    </ref>
+                    O S U Đ U J E
+                </p>
+                <p>
+                    Na kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno odredjuje da se ista neće izvršiti ukoliko okrivljeni u roku od 1 (jedne) godine po pravosnažnosti presude ne učini novo krivično djelo.
+                </p>
+                <p>
+                    Dužan je okrivljeni da na ime troškova krivičnog postupka uplati ovom sudu iznos od 50,00 eura na ime sudskog paušala, u roku od 15 dana po pravosnažnosti presude.
+                </p>
+                <p>
+                    Na osnovu
+                    <ref href="/krivicni#art_75">
+                        čl. 75 Krivičnog zakonika Crne Gore
+                    </ref>
+                    sud izriče
+                </p>
+                <p>
+                    MJERU BEZBJEDNOSTI
+                    Od okrivljenog se oduzimaju tri novčanice u apoenima od po 100,00 €, serijskih brojeva Sxxxxxxxxxxxxx, Sxxxxxxxxxxxxxx i Sxxxxxxxxxxxxx.
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

@@ -41,10 +41,10 @@ def process_text(text, file_path):
     response = chain.invoke({"presuda": presuda, "conclusion_example": conclusion_example, "input": text})
     print(response.content)
     # save response to file
-    pathlib.Path(f"./xml/{file_path.stem}.xml").write_text(response.content)
+    pathlib.Path(f"./xml_new/{file_path.stem}.xml").write_text(response.content)
 
 
 text_files = list(pathlib.Path("./text").rglob("*.txt"))
-for text_file in text_files[1:5]:
+for text_file in text_files[0:10]:
     text = pathlib.Path(text_file).read_text()
     process_text(text, text_file)
