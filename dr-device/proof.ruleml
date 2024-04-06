@@ -11,13 +11,25 @@
 <Ind uri='&proof-export;proof1'>proof1</Ind>
 </oid>
 <Literal>
-<RDF_resource uri='&export;failure_to_report1'/>
+<RDF_resource uri='&export;procurement_money_under_150001'/>
 </Literal>
 <Defeasible_Proof>
 <supportive_rule>
-<rule_ref rule='&rulebase;rule13'/>
+<rule_ref rule='&rulebase;rule3'/>
 </supportive_rule>
 <defeasible_body_grounds>
+<Definitely_Proved>
+<Literal>
+<RDF_resource uri='&lc;counterfeiting_case'/>
+</Literal>
+<Definite_Proof>
+<strict_clause>
+<Fact>
+<RDF_resource uri='&lc;counterfeiting_case'/>
+</Fact>
+</strict_clause>
+</Definite_Proof>
+</Definitely_Proved>
 <Definitely_Proved>
 <Literal>
 <RDF_resource uri='&lc;counterfeiting_case'/>
@@ -45,7 +57,7 @@
 </Literal>
 <Defeasible_Proof>
 <supportive_rule>
-<rule_ref rule='&rulebase;report_failure_min'/>
+<rule_ref rule='&rulebase;pn_use_lt_min'/>
 </supportive_rule>
 <defeasible_body_grounds>
 <proof_ref proof='&proof-export;proof1'/>
@@ -64,7 +76,7 @@
 </Literal>
 <Defeasible_Proof>
 <supportive_rule>
-<rule_ref rule='&rulebase;report_failure_max'/>
+<rule_ref rule='&rulebase;pn_use_lt_max'/>
 </supportive_rule>
 <defeasible_body_grounds>
 <proof_ref proof='&proof-export;proof1'/>
@@ -83,7 +95,7 @@
 </Literal>
 <Defeasible_Proof>
 <supportive_rule>
-<rule_ref rule='&rulebase;pen_conf_13'/>
+<rule_ref rule='&rulebase;pen_conf_3'/>
 </supportive_rule>
 <defeasible_body_grounds>
 <proof_ref proof='&proof-export;proof1'/>
