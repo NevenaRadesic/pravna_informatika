@@ -55,6 +55,7 @@ public class Controller {
 //        this.judgementService.createAkomaNtoso(content);
         try {
             this.judgementService.createPdf(content);
+            this.judgementService.copyToFront(content.getId());
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
         }

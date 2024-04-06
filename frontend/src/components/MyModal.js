@@ -121,7 +121,7 @@ const MyModal = ({ isOpen, startData, pairData, setIsOpen}) => {
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} ref={divContentRef} >
           <h3>{startData.court}</h3>
           <h3>{startData.judgementNumber}</h3>
-          <p>25. April 2019</p>
+          <p>{new Date().toLocaleDateString('en-GB').replace(/\//g, '.')}</p>
           <h6>U IME CRNE GORE</h6>
           <div contenteditable="true" style={{ width: '90%' }}>
             <p>

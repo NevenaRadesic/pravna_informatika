@@ -102,4 +102,17 @@ public class JudgementService {
 
         HtmlConverter.convertToPdf(htmlContent, pdfDoc.getWriter());
     }
+
+    public void copyToFront(String fileName) {
+        String izvornaPutanja = "./presude/pdf/" + fileName + ".pdf";
+        String odredisnaPutanja = "./frontend/public/presude/" + fileName.replaceAll("[/ ]", "_") + ".pdf";
+        Path izvorna = Paths.get(izvornaPutanja);
+        Path odredisna = Paths.get(odredisnaPutanja);
+
+        try {
+            Files.copy(izvorna, odredisna);
+        } catch (IOException e) {
+            System.out.println("Došlo je do greške prilikom kopiranja datoteke");
+        }
+    }
 }

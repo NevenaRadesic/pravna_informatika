@@ -160,34 +160,28 @@
      <rdfs:domain rdf:resource='&export;to_confiscate'/>
 </rdf:Property>
 
-<export:procurement_money_under_15000 rdf:about='&export;procurement_money_under_150001'>
-     <export:defendant>John Doe</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-negative</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
-</export:procurement_money_under_15000>
-
-<export:procurement_money_under_15000_aggravating_circumstances rdf:about='&export;procurement_money_under_15000_aggravating_circumstances1'>
+<export:failure_to_report rdf:about='&export;failure_to_report1'>
      <export:defendant>John Doe</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
-</export:procurement_money_under_15000_aggravating_circumstances>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
+</export:failure_to_report>
 
 <export:min_imprisonment rdf:about='&export;min_imprisonment1'>
      <export:value>0</export:value>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
 </export:min_imprisonment>
 
 <export:max_imprisonment rdf:about='&export;max_imprisonment1'>
-     <export:value>20</export:value>
+     <export:value>1</export:value>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
 </export:max_imprisonment>
 
 <export:to_confiscate rdf:about='&export;to_confiscate1'>
      <export:value>1</export:value>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
 </export:to_confiscate>
 
 </rdf:RDF>

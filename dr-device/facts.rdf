@@ -6,9 +6,9 @@
     <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#counterfeiting_case">
         <lc:name>Case 01</lc:name>
         <lc:defendant>John Doe</lc:defendant>
-        <lc:crime_type>procurement_of_counterfeit_money</lc:crime_type>
-        <lc:amount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.110454791975242</lc:amount>
-        <lc:financial_condition>good</lc:financial_condition>
-        <lc:extended_criminal_activity>true</lc:extended_criminal_activity>
+        <lc:crime_type>failure_to_report</lc:crime_type>
+        <lc:amount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6464049810886583</lc:amount>
+        <lc:financial_condition>moderate</lc:financial_condition>
+        <lc:extended_criminal_activity>false</lc:extended_criminal_activity>
     </lc:case>
 </rdf:RDF>
