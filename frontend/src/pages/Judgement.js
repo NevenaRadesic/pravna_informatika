@@ -15,7 +15,7 @@ function Judgement({setJudgement}) {
   useEffect(() => {
     fetch('http://localhost:8080/case-records')
       .then(response => response.json())
-      .then(data => setJudgements(data))
+      .then(data => {setJudgements(data); setNewJudgement(data[0]); })
       .catch(error => console.error('Error fetching data: ', error));
   }, []);
 
@@ -41,6 +41,9 @@ function Judgement({setJudgement}) {
   };
 
   function setNewJudgement(judgement) {
+    if (!judgement) {
+      return;
+    }
     console.log(judgement);
     setJudgement(judgement);
     // add class to the selected judgement

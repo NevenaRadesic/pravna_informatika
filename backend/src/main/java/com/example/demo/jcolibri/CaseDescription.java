@@ -43,6 +43,7 @@ public class CaseDescription implements CaseComponent {
 	private String primenjeniPropisi;
 
 
+
 //	TODO: neki atributi nisu postavljeni
 	public CaseDescription(FormData f) {
 		this.sud = f.getCourt();
@@ -57,6 +58,7 @@ public class CaseDescription implements CaseComponent {
 		this.extendedCriminalActivity = f.isExtendedCriminalActivity();
 		this.financialStatus = FinancialStatus.valueOf(f.getFinancialStatus());
 		this.primenjeniPropisi = f.getAppliedRules();
+		this.counterfeitItemCount = f.getNumberOfBanknotes();
 	}
 
 	public static String getCurrentFormattedDate() {

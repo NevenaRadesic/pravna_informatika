@@ -20,7 +20,7 @@ function Navbar() {
             
           <ul className='nav-menu-items'>
             <div className='navbar-header'>
-              OSUDI.ME
+              Pravni Asistent
             </div>
             
             {SidebarData.map((item, index) => {

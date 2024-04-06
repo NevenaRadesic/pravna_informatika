@@ -11,10 +11,7 @@ import es.ucm.fdi.gaia.jcolibri.exception.InitializingException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.LinkedList;
+import java.util.*;
 
 public class CsvConnector implements Connector {
 	
@@ -22,8 +19,20 @@ public class CsvConnector implements Connector {
 	public Collection<CBRCase> retrieveAllCases() {
 		LinkedList<CBRCase> cases = new LinkedList<CBRCase>();
 		
+		List<CaseDescription> caseDescriptions = retrieveAllCaseDescriptions();
+		for (CaseDescription caseDescription : caseDescriptions) {
+			CBRCase cbrCase = new CBRCase();
+			cbrCase.setDescription(caseDescription);
+			cases.add(cbrCase);
+		}
+		return cases;
+	}
+
+	public List<CaseDescription> retrieveAllCaseDescriptions() {
+		List<CaseDescription> cases = new ArrayList<>();
+
 		try {
-			BufferedReader br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/presude.csv")));
+			BufferedReader br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/presude3.csv")));
 			if (br == null)
 				throw new Exception("Error opening file");
 
@@ -31,9 +40,7 @@ public class CsvConnector implements Connector {
 			while ((line = br.readLine()) != null) {
 				if (line.startsWith("#") || (line.length() == 0))
 					continue;
-				String[] values = line.split(";");
-
-				CBRCase cbrCase = new CBRCase();
+				String[] values = line.split("\\|");
 
 				CaseDescription caseDescription = new CaseDescription();
 				caseDescription.setId(Integer.parseInt(values[0]));
@@ -55,12 +62,7 @@ public class CsvConnector implements Connector {
 				caseDescription.setVrstaPresude(values[15]);
 				caseDescription.setPrimenjeniPropisi(values[16]);
 
-
-//				caseDescription.setCounterfeitingType(getCounterfeitingTypeFromString(values[8]));
-
-
-				cbrCase.setDescription(caseDescription);
-				cases.add(cbrCase);
+				cases.add(caseDescription);
 			}
 			br.close();
 		} catch (Exception e) {

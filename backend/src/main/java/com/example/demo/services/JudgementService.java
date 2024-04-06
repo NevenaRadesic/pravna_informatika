@@ -2,18 +2,23 @@ package com.example.demo.services;
 
 import com.example.demo.dto.CreateJudgementDTO;
 import com.example.demo.dto.FormData;
+import com.example.demo.jcolibri.CaseDescription;
+import com.example.demo.jcolibri.CsvConnector;
 import com.itextpdf.html2pdf.HtmlConverter;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.TextAlignment;
+import com.opencsv.bean.CsvToBeanBuilder;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class JudgementService {
@@ -23,6 +28,10 @@ public class JudgementService {
 
         try {
             String fileContent = readFile(filePath);
+            CsvConnector connector = new CsvConnector();
+            List<FormData> data = connector.retrieveAllCaseDescriptions().stream().map(FormData::new).collect(Collectors.toList());
+            int maxId = data.stream().map(FormData::getId).max(Integer::compareTo).orElse(0);
+            c.setId(maxId + 1);
             String updatedContent = fileContent + c.toCSV();
             writeFile(filePath, updatedContent);
         } catch (IOException e) {

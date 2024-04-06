@@ -15,6 +15,7 @@ public class FormData {
     // {"court":"privredni-sud-bijelo-polje","judgementNumber":"","judge":"","prosecutor":"","crime":"",
     // "defendant":"","extendedCriminalActivity":"","financialStatus":""}
     private String court;
+    private int id;
     private String judgementNumber;
     private String judge;
     private String prosecutor;
@@ -23,6 +24,7 @@ public class FormData {
     private boolean extendedCriminalActivity;
     private String financialStatus;
     private double totalAmount;
+    private int numberOfBanknotes;
     private double similarity;
 
 
@@ -30,6 +32,7 @@ public class FormData {
     private String judgementType;
 
     public FormData (CaseDescription cd) {
+        this.id = cd.getId();
         this.court = cd.getSud();
         this.judgementNumber = cd.getPoslovniBroj();
         this.judge = cd.getSudija();
@@ -38,17 +41,18 @@ public class FormData {
         this.defendant = cd.getOkrivljeni();
         this.extendedCriminalActivity = cd.isExtendedCriminalActivity();
         this.financialStatus = String.valueOf(cd.getFinancialStatus());
+        this.numberOfBanknotes = cd.getCounterfeitItemCount();
         this.totalAmount = cd.getAmountOfMoney();
         this.appliedRules = cd.getPrimenjeniPropisi();
     }
 
     public String toCSV() {
         String separator = "|";
-        return "1" + separator + this.court + separator + this.judgementNumber + separator +
+        return this.id + separator + this.court + separator + this.judgementNumber + separator +
                 getCurrentFormattedDateWithDots() + separator + this.judge + separator + this.prosecutor + separator +
-                defendant + separator + "Falsifikovanje novca" + separator + this.crime.toLowerCase() + separator + "" + separator +
-                totalAmount + separator + financialStatus.toLowerCase() + separator + extendedCriminalActivity + separator + "" +
-                separator + "" + separator + judgementType + separator + appliedRules ;
+                defendant + separator + "Falsifikovanje novca" + separator + this.crime.toLowerCase() + separator + numberOfBanknotes + separator +
+                totalAmount + separator + financialStatus.toLowerCase() + separator + (extendedCriminalActivity ? "da" : "ne")  + separator + "Crna Gora" +
+                separator + "1" + separator + judgementType + separator + appliedRules ;
     }
 
 

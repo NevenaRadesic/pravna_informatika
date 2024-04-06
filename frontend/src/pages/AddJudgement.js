@@ -28,7 +28,7 @@ function AddJudgement() {
 
   const [addedBanknotes, setAddedBanknotes] = useState([]);
 
-  const [total, setTotal] = useState([]);
+  const [total, setTotal] = useState(0);
 
   const [currencyDict, setCurrencyDict] = useState([]);
 
@@ -38,36 +38,37 @@ function AddJudgement() {
 
   useEffect(() => {
     const fetchExchangeRates = async () => {
-      let data;
+      let apiUrl = "http://api.exchangeratesapi.io/v1/latest?access_key=d61ea9f6633b186949b583457770e326";
       try {
-        let apiUrl = "http://api.exchangeratesapi.io/v1/latest?access_key=d61ea9f6633b186949b583457770e326";
-        const response = await fetch(apiUrl, {
-          method: "GET",
-        });
-        data = await response.json();
+        const response = await fetch(apiUrl);
+        if (!response.ok) throw new Error('Network response was not ok.');
+        const data = await response.json();
+        // console.log(data);
         setCurrencyDict(data);
-        console.log(data);
       } catch (error) {
-        data = exchangeRates;
+        console.log('Error fetching exchange rates.');
+        setCurrencyDict(exchangeRates);
       }
+      // calculateTotal();
     };
-
+  
     fetchExchangeRates();
-
   }, []);
+  
 
 
-  useEffect(() => {
+  let calculateTotal = (banknotes) => {
     let sum = 0;
-
-    for (let i = 0; i < addedBanknotes.length; i++) {
-      let currencyMark = addedBanknotes[i]['currency'].toUpperCase();
-      console.log(addedBanknotes[i]['value'], addedBanknotes[i]['quantity'], addedBanknotes[i]['currency']);
-      let zadodati = addedBanknotes[i]['value'] * addedBanknotes[i]['quantity'] / currencyDict['rates'][currencyMark]; 
+    // console.log('currencyDict', currencyDict);
+    for (let i = 0; i < banknotes.length; i++) {
+      let currencyMark = banknotes[i]['currency'].toUpperCase();
+      console.log(banknotes[i]['value'], banknotes[i]['quantity'], banknotes[i]['currency']);
+      let zadodati = banknotes[i]['value'] * banknotes[i]['quantity'] / currencyDict['rates'][currencyMark]; 
       sum += zadodati;
     }
+    console.log(sum);
     setTotal(sum);
-  }, [addedBanknotes, currencyDict]); 
+  }; 
 
 
   /*useEffect(() => {
@@ -94,6 +95,7 @@ function AddJudgement() {
       ...prevData,
       [name]: value,
     }));
+    // calculateTotal();
   };
 
 
@@ -111,7 +113,7 @@ function AddJudgement() {
 
   const addBanknote = async () => {
     setAddedBanknotes(prevBanknotes => [...prevBanknotes, banknoteData]);
-    
+    calculateTotal([...addedBanknotes, banknoteData]);
   };
 
   
@@ -296,6 +298,7 @@ function AddJudgement() {
         <MakeDecision 
               input={inputData} 
               total={parseFloat(total)} 
+              quantity={banknoteData.quantity}
               options={
                   [...new Set(resultData.similar.map(x => x.appliedRules.split(';')).flat())].map((rule, index) => ({ name: rule, id: index }))
               }

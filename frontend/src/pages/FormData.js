@@ -42,6 +42,7 @@ export const FormData = {
 }
 
 export const exchangeRates = {
+    rates: {
     AED: 3.965985,
     AFN: 76.897327,
     ALL: 102.763065,
@@ -212,4 +213,5 @@ export const exchangeRates = {
     ZMK: 9721.041365,
     ZMW: 26.999551,
     ZWL: 347.750551
+    },
   };

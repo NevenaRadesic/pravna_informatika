@@ -25,6 +25,7 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
+      <Route exact path='/' Component={Law} />
         <Route exact path='/law' Component={Law} />
         <Route exact path='/pdf-law' Component={PdfLaw} />
         <Route exact path='/judgement' Component={JudgementPage} />

@@ -54,11 +54,15 @@ const makeDecisionBasedOnLaw= async (inputData, total) => {
   }  
 }
 
-const addJudgement = async (decision, input, total) => {
+const addJudgement = async (decision, input, total, quantity) => {
   try {
     input.totalAmount = total;
     input.appliedRules = decision.appliedRules;
     input.judgementType = decision.judgementType;
+    input.numberOfBanknotes = quantity;
+
+    // remap input
+    // input.extendedCriminalActivity = input.extendedCriminalActivity ? 'da' : 'ne';
 
     const response = await fetch('http://localhost:8080/addJudgement', {
       method: 'POST',

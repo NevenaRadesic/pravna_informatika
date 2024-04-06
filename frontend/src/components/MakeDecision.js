@@ -6,7 +6,7 @@ import SuggestedItems from './SuggestedItems';
 
 import MyModal from './MyModal';
 
-const MakeDecision = ({ input, total, options }) => {
+const MakeDecision = ({ input, total, quantity, options }) => {
   const [decision, setDecision] = useState({
     appliedRules: '',
     judgementType: ''
@@ -37,7 +37,7 @@ const MakeDecision = ({ input, total, options }) => {
       let newDecision = { ...decision, appliedRules: combinedRules };
       setDecision(newDecision);
 
-      await addJudgement(newDecision, input, total);
+      await addJudgement(newDecision, input, total, quantity);
       toast.success('Vaša presuda je uspešno sačuvana u bazi');
     } catch (error) {
       toast.error('Desila se greška.');
@@ -55,7 +55,7 @@ const MakeDecision = ({ input, total, options }) => {
                     <div className='row'>
                     
                         <div className='col-6'>
-                            <div className="form-floating mb-3">
+                            <div className="form-floating mb-3" style={{zIndex: 0}}>
                                 <input type="text" className="form-control" id="floatingInput" placeholder="cl. 45." 
                                     name="appliedRules"value={decision.appliedRules} onChange={handleChange}/>
                                 <label htmlFor="floatingInput">Primenjeni propisi</label>
