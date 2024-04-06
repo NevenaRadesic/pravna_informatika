@@ -6,7 +6,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          proof="proof.ruleml"
          rdf_export="export.rdf"
-         rdf_export_classes=" counterfeiting_money_under_15000 counterfeiting_money_over_15000 procurement_money_under_15000 procurement_money_over_15000 counterfeiting_money_under_15000_mitigating_circumstances counterfeiting_money_over_15000_mitigating_circumstances procurement_money_under_15000_mitigating_circumstances procurement_money_over_15000_mitigating_circumstances counterfeiting_money_under_15000_aggravating_circumstances counterfeiting_money_over_15000_aggravating_circumstances procurement_money_under_15000_aggravating_circumstances procurement_money_over_15000_aggravating_circumstances failure_to_report min_imprisonment max_imprisonment  "
+         rdf_export_classes=" counterfeiting_money_under_15000 counterfeiting_money_over_15000 procurement_money_under_15000 procurement_money_over_15000 counterfeiting_money_under_15000_mitigating_circumstances counterfeiting_money_over_15000_mitigating_circumstances procurement_money_under_15000_mitigating_circumstances procurement_money_over_15000_mitigating_circumstances counterfeiting_money_under_15000_aggravating_circumstances counterfeiting_money_over_15000_aggravating_circumstances procurement_money_under_15000_aggravating_circumstances procurement_money_over_15000_aggravating_circumstances failure_to_report min_imprisonment max_imprisonment to_confiscate "
          rdf_import="&#34;facts.rdf&#34;">
    <Assert>
       <Implies ruletype="defeasiblerule">
@@ -1102,6 +1102,357 @@
                <slot>
                   <Ind uri="defendant"/>
                   <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_1">pen_conf_1</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>counterfeiting_money_under_15000</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_2">pen_conf_2</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>counterfeiting_money_over_15000</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_3">pen_conf_3</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>procurement_money_under_15000</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_4">pen_conf_4</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>procurement_money_over_15000</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_5">pen_conf_5</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>counterfeiting_money_under_15000_mitigating_circumstances</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_6">pen_conf_6</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>counterfeiting_money_over_15000_mitigating_circumstances</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_7">pen_conf_7</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>procurement_money_under_15000_mitigating_circumstances</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_8">pen_conf_8</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>procurement_money_over_15000_mitigating_circumstances</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_9">pen_conf_9</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>counterfeiting_money_under_15000_aggravating_circumstances</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_10">pen_conf_10</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>counterfeiting_money_over_15000_aggravating_circumstances</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_11">pen_conf_11</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>procurement_money_under_15000_aggravating_circumstances</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_12">pen_conf_12</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>procurement_money_over_15000_aggravating_circumstances</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen_conf_13">pen_conf_13</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>failure_to_report</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_confiscate</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
                </slot>
             </Atom>
          </head>

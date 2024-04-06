@@ -1,6 +1,6 @@
 @echo off
 
-set "targetDirectory=..\dr-device"
+set "targetDirectory=.\dr-device"
 cd /d "%targetDirectory%"
 
 

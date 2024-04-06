@@ -1,4 +1,6 @@
-set "targetDirectory=..\dr-device"
+@echo off
+
+set "targetDirectory=.\dr-device"
 cd /d "%targetDirectory%"
 
 @ del /q /f facts.n3

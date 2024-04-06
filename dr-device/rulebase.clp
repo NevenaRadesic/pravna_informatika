@@ -1,5 +1,5 @@
 (import-rdf "facts.rdf")
-		(export-rdf export.rdf   counterfeiting_money_under_15000 counterfeiting_money_over_15000 procurement_money_under_15000 procurement_money_over_15000 counterfeiting_money_under_15000_mitigating_circumstances counterfeiting_money_over_15000_mitigating_circumstances procurement_money_under_15000_mitigating_circumstances procurement_money_over_15000_mitigating_circumstances counterfeiting_money_under_15000_aggravating_circumstances counterfeiting_money_over_15000_aggravating_circumstances procurement_money_under_15000_aggravating_circumstances procurement_money_over_15000_aggravating_circumstances failure_to_report min_imprisonment max_imprisonment  )
+		(export-rdf export.rdf   counterfeiting_money_under_15000 counterfeiting_money_over_15000 procurement_money_under_15000 procurement_money_over_15000 counterfeiting_money_under_15000_mitigating_circumstances counterfeiting_money_over_15000_mitigating_circumstances procurement_money_under_15000_mitigating_circumstances procurement_money_over_15000_mitigating_circumstances counterfeiting_money_under_15000_aggravating_circumstances counterfeiting_money_over_15000_aggravating_circumstances procurement_money_under_15000_aggravating_circumstances procurement_money_over_15000_aggravating_circumstances failure_to_report min_imprisonment max_imprisonment to_confiscate )
 		(export-proof proof.ruleml)
 		
 (defeasiblerule rule1
@@ -576,6 +576,188 @@
 	(failure_to_report 
 		(
 		 defendant ?Defendant)
+	) 
+) 
+	
+(defeasiblerule pen_conf_1
+		 
+	(counterfeiting_money_under_15000 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen_conf_2
+		 
+	(counterfeiting_money_over_15000 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen_conf_3
+		 
+	(procurement_money_under_15000 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen_conf_4
+		 
+	(procurement_money_over_15000 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen_conf_5
+		 
+	(counterfeiting_money_under_15000_mitigating_circumstances 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen_conf_6
+		 
+	(counterfeiting_money_over_15000_mitigating_circumstances 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen_conf_7
+		 
+	(procurement_money_under_15000_mitigating_circumstances 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen_conf_8
+		 
+	(procurement_money_over_15000_mitigating_circumstances 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen_conf_9
+		 
+	(counterfeiting_money_under_15000_aggravating_circumstances 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen_conf_10
+		 
+	(counterfeiting_money_over_15000_aggravating_circumstances 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen_conf_11
+		 
+	(procurement_money_under_15000_aggravating_circumstances 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen_conf_12
+		 
+	(procurement_money_over_15000_aggravating_circumstances 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen_conf_13
+		 
+	(failure_to_report 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_confiscate 
+		(
+		 value 1)
 	) 
 ) 
 	

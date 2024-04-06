@@ -28,7 +28,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule9_1-deductive-gen535] [rule5_1-deductive-gen527] [rule1-deductive-gen522]))
+   (deductive-rules [rule9_1-deductive-gen652] [rule5_1-deductive-gen644] [rule1-deductive-gen639]))
 
 ([counterfeiting_money_over_15000-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -60,7 +60,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule10_2-deductive-gen537] [rule6_2-deductive-gen529] [rule2-deductive-gen523]))
+   (deductive-rules [rule10_2-deductive-gen654] [rule6_2-deductive-gen646] [rule2-deductive-gen640]))
 
 ([procurement_money_under_15000-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -92,7 +92,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule11_3-deductive-gen539] [rule7_3-deductive-gen531] [rule3-deductive-gen524]))
+   (deductive-rules [rule11_3-deductive-gen656] [rule7_3-deductive-gen648] [rule3-deductive-gen641]))
 
 ([procurement_money_over_15000-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -124,7 +124,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule12_4-deductive-gen541] [rule8_4-deductive-gen533] [rule4-deductive-gen525]))
+   (deductive-rules [rule12_4-deductive-gen658] [rule8_4-deductive-gen650] [rule4-deductive-gen642]))
 
 ([counterfeiting_money_under_15000_mitigating_circumstances-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -156,7 +156,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule5-deductive-gen526]))
+   (deductive-rules [rule5-deductive-gen643]))
 
 ([counterfeiting_money_over_15000_mitigating_circumstances-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -188,7 +188,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule6-deductive-gen528]))
+   (deductive-rules [rule6-deductive-gen645]))
 
 ([procurement_money_under_15000_mitigating_circumstances-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -220,7 +220,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule7-deductive-gen530]))
+   (deductive-rules [rule7-deductive-gen647]))
 
 ([procurement_money_over_15000_mitigating_circumstances-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -252,7 +252,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule8-deductive-gen532]))
+   (deductive-rules [rule8-deductive-gen649]))
 
 ([counterfeiting_money_under_15000_aggravating_circumstances-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -284,7 +284,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule9-deductive-gen534]))
+   (deductive-rules [rule9-deductive-gen651]))
 
 ([counterfeiting_money_over_15000_aggravating_circumstances-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -316,7 +316,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule10-deductive-gen536]))
+   (deductive-rules [rule10-deductive-gen653]))
 
 ([procurement_money_under_15000_aggravating_circumstances-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -348,7 +348,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule11-deductive-gen538]))
+   (deductive-rules [rule11-deductive-gen655]))
 
 ([procurement_money_over_15000_aggravating_circumstances-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -380,7 +380,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule12-deductive-gen540]))
+   (deductive-rules [rule12-deductive-gen657]))
 
 ([failure_to_report-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -412,7 +412,39 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [rule13-deductive-gen542]))
+   (deductive-rules [rule13-deductive-gen659]))
+
+([to_confiscate-derived-class] of derived-class-inst
+   (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
+   (aliases rdfs:seeAlso rdfs:isDefinedBy)
+   (positive 0)
+   (negative 0)
+   (positive-derivator)
+   (negative-derivator)
+   (positive-support)
+   (negative-support)
+   (positive-overruled)
+   (negative-overruled)
+   (positive-defeated)
+   (negative-defeated)
+   (proof nil)
+   (uri nil)
+   (source rdf)
+   (lc:name)
+   (lc:defendant)
+   (lc:crime_type)
+   (lc:financial_condition)
+   (lc:extended_criminal_activity)
+   (lc:amount)
+   (rdfs:isDefinedBy)
+   (rdf:type [rdfs:Class])
+   (rdf:value)
+   (rdfs:comment)
+   (rdfs:label to_confiscate)
+   (rdfs:seeAlso)
+   (rdfs:subClassOf [derived-class-inst])
+   (stratum 0)
+   (deductive-rules [pen_conf_13-deductive-gen672] [pen_conf_12-deductive-gen671] [pen_conf_11-deductive-gen670] [pen_conf_10-deductive-gen669] [pen_conf_9-deductive-gen668] [pen_conf_8-deductive-gen667] [pen_conf_7-deductive-gen666] [pen_conf_6-deductive-gen665] [pen_conf_5-deductive-gen664] [pen_conf_4-deductive-gen663] [pen_conf_3-deductive-gen662] [pen_conf_2-deductive-gen661] [pen_conf_1-deductive-gen660]))
 
 ([min_imprisonment-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -444,7 +476,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [report_failure_min-deductive-gen567] [pn_use_gt_agg_min-deductive-gen565] [pn_use_lt_agg_min-deductive-gen563] [pn_make_gt_agg_min-deductive-gen561] [pn_make_lt_agg_min-deductive-gen559] [pn_use_gt_mitigating_min-deductive-gen557] [pn_use_lt_mitigating_min-deductive-gen555] [pn_make_gt_mitigating_min-deductive-gen553] [pn_make_lt_mitigating_min-deductive-gen551] [pn_use_gt_min-deductive-gen549] [pn_use_lt_min-deductive-gen547] [pn_make_gt_min-deductive-gen545] [pn_make_lt_min-deductive-gen543]))
+   (deductive-rules [report_failure_min-deductive-gen697] [pn_use_gt_agg_min-deductive-gen695] [pn_use_lt_agg_min-deductive-gen693] [pn_make_gt_agg_min-deductive-gen691] [pn_make_lt_agg_min-deductive-gen689] [pn_use_gt_mitigating_min-deductive-gen687] [pn_use_lt_mitigating_min-deductive-gen685] [pn_make_gt_mitigating_min-deductive-gen683] [pn_make_lt_mitigating_min-deductive-gen681] [pn_use_gt_min-deductive-gen679] [pn_use_lt_min-deductive-gen677] [pn_make_gt_min-deductive-gen675] [pn_make_lt_min-deductive-gen673]))
 
 ([max_imprisonment-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -476,5 +508,5 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 0)
-   (deductive-rules [report_failure_max-deductive-gen568] [pn_use_gt_agg_max-deductive-gen566] [pn_use_lt_agg_max-deductive-gen564] [pn_make_gt_agg_max-deductive-gen562] [pn_make_lt_agg_max-deductive-gen560] [pn_use_gt_mitigating_max-deductive-gen558] [pn_use_lt_mitigating_max-deductive-gen556] [pn_make_gt_mitigating_max-deductive-gen554] [pn_make_lt_mitigating_max-deductive-gen552] [pn_use_gt_max-deductive-gen550] [pn_use_lt_max-deductive-gen548] [pn_make_gt_max-deductive-gen546] [pn_make_lt_max-deductive-gen544]))
+   (deductive-rules [report_failure_max-deductive-gen698] [pn_use_gt_agg_max-deductive-gen696] [pn_use_lt_agg_max-deductive-gen694] [pn_make_gt_agg_max-deductive-gen692] [pn_make_lt_agg_max-deductive-gen690] [pn_use_gt_mitigating_max-deductive-gen688] [pn_use_lt_mitigating_max-deductive-gen686] [pn_make_gt_mitigating_max-deductive-gen684] [pn_make_lt_mitigating_max-deductive-gen682] [pn_use_gt_max-deductive-gen680] [pn_use_lt_max-deductive-gen678] [pn_make_gt_max-deductive-gen676] [pn_make_lt_max-deductive-gen674]))
 

@@ -90,6 +90,11 @@
      <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
 </rdfs:Class>
 
+<rdfs:Class rdf:about='&export;to_confiscate'>
+     <rdfs:label rdf:resource='to_confiscate'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
 
 <rdf:Property rdf:about='&export;defendant'>
      <rdfs:domain rdf:resource='&export;counterfeiting_money_under_15000'/>
@@ -151,17 +156,21 @@
      <rdfs:domain rdf:resource='&export;max_imprisonment'/>
 </rdf:Property>
 
-<export:counterfeiting_money_under_15000 rdf:about='&export;counterfeiting_money_under_150001'>
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_confiscate'/>
+</rdf:Property>
+
+<export:procurement_money_under_15000 rdf:about='&export;procurement_money_under_150001'>
      <export:defendant>John Doe</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-negative</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
-</export:counterfeiting_money_under_15000>
+</export:procurement_money_under_15000>
 
-<export:counterfeiting_money_under_15000_aggravating_circumstances rdf:about='&export;counterfeiting_money_under_15000_aggravating_circumstances1'>
+<export:procurement_money_under_15000_aggravating_circumstances rdf:about='&export;procurement_money_under_15000_aggravating_circumstances1'>
      <export:defendant>John Doe</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
-</export:counterfeiting_money_under_15000_aggravating_circumstances>
+</export:procurement_money_under_15000_aggravating_circumstances>
 
 <export:min_imprisonment rdf:about='&export;min_imprisonment1'>
      <export:value>0</export:value>
@@ -174,5 +183,11 @@
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
 </export:max_imprisonment>
+
+<export:to_confiscate rdf:about='&export;to_confiscate1'>
+     <export:value>1</export:value>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
+</export:to_confiscate>
 
 </rdf:RDF>

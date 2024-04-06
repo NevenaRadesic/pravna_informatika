@@ -136,38 +136,6 @@
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
 
-<!--
-		<lrml:PrescriptiveStatement key="ps5">
-            <ruleml:Rule key=":rule5" closure="universal" strength="defeasible">
-                <ruleml:if>
-					<ruleml:And>
-                        <ruleml:Atom>
-							<ruleml:Rel>counterfeiting_money_under_15000</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:financial_condition"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">poor</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:extended_criminal_activity"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>               
-                <ruleml:then>
-                    <ruleml:Atom>
-                        <ruleml:Rel>counterfeiting_money_under_15000_mitigating_circumstances</ruleml:Rel>
-                        <ruleml:Var type=":defendant">Defendant</ruleml:Var>
-                    </ruleml:Atom>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
--->
-
-
 
 		<lrml:PrescriptiveStatement key="ps5">
             <ruleml:Rule key=":rule5" closure="universal" strength="defeasible">
@@ -669,13 +637,7 @@
             <ruleml:Rule key=":rule13" closure="universal" strength="defeasible">
                 <ruleml:if>
 					<ruleml:And>
-					<!--
-                        <ruleml:Atom>
-						    <ruleml:Rel iri="lc:amount"/>
-    						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-						    <ruleml:Var type="amount">Amount</ruleml:Var>
-						</ruleml:Atom>
-						-->
+				
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:crime_type"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
@@ -691,34 +653,8 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
-
-
 		
-<!--
-		
-		<lrml:PrescriptiveStatement key="ps13">
-            <ruleml:Rule key=":rule13" closure="universal" strength="defeasible">
-                <ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:crime_type"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">failure_to_report</ruleml:Data>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>               
-                <ruleml:then>
-                    <ruleml:Atom>
-                        <ruleml:Rel>failure_to_report</ruleml:Rel>
-                        <ruleml:Var type=":defendant">Defendant</ruleml:Var>
-                    </ruleml:Atom>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-		-->
 
-		
-<!--
 		<lrml:PenaltyStatement key="pen_conf_1">
 			<lrml:SuborderList>
 				<lrml:Obligation>
@@ -754,7 +690,126 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
-		-->
+
+		<lrml:PenaltyStatement key="pen_conf_4">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="pen_conf_5">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="pen_conf_6">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="pen_conf_7">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		
+		<lrml:PenaltyStatement key="pen_conf_8">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="pen_conf_9">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="pen_conf_10">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="pen_conf_11">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="pen_conf_12">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="pen_conf_13">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_confiscate"/>
+							<ruleml:Var>Goods</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
 
 
 		<lrml:PenaltyStatement key="pn_make_lt_min">
@@ -1072,7 +1127,7 @@
 		</lrml:PenaltyStatement>
 
 
-<!--
+
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen_conf_1"/>
@@ -1093,7 +1148,76 @@
 				<lrml:toPrescriptiveStatement keyref="#ps3"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
-		-->
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_conf_4"/>
+				<lrml:toPrescriptiveStatement keyref="#ps4"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_conf_5"/>
+				<lrml:toPrescriptiveStatement keyref="#ps5"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_conf_6"/>
+				<lrml:toPrescriptiveStatement keyref="#ps6"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_conf_7"/>
+				<lrml:toPrescriptiveStatement keyref="#ps7"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_conf_8"/>
+				<lrml:toPrescriptiveStatement keyref="#ps8"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_conf_9"/>
+				<lrml:toPrescriptiveStatement keyref="#ps9"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_conf_10"/>
+				<lrml:toPrescriptiveStatement keyref="#ps10"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_conf_11"/>
+				<lrml:toPrescriptiveStatement keyref="#ps11"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_conf_12"/>
+				<lrml:toPrescriptiveStatement keyref="#ps12"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen_conf_13"/>
+				<lrml:toPrescriptiveStatement keyref="#ps13"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
 
 
 		<lrml:ReparationStatement>

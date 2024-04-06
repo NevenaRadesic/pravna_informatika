@@ -45,7 +45,8 @@ public class DrDeviceService {
             Matcher matcher = pattern.matcher(input);
             while (matcher.find()) {
                 if (match.equals("min_imprisonment")) finalResult += dict.get(match) + matcher.group(2);
-                else finalResult += dict.get(match) + matcher.group(2) + " godina.";
+                else if (match.equals("max_imprisonment")) finalResult += dict.get(match) + matcher.group(2) + " godina. ";
+                else finalResult += "Od okrivljenog se oduzimaju gorepomenute novčanice.";
             }
         }
         return finalResult;
@@ -83,8 +84,10 @@ public class DrDeviceService {
         ProcessBuilder processBuilder = new ProcessBuilder(scriptPath);
         try {
             Process process = processBuilder.start();
+            processBuilder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
+            processBuilder.redirectError(ProcessBuilder.Redirect.INHERIT);
             int exitCode = process.waitFor();
-            System.out.println("Batch script exited with code: " + exitCode);
+            System.out.println("Batch script exited with code: " + exitCode + "ime skripte je " + scriptPath);
         } catch (InterruptedException | IOException e) {
             e.printStackTrace();
         }
@@ -113,7 +116,7 @@ public class DrDeviceService {
     private void writeToFile(String text) {
 //        String filePath = "../../../../../../../../dr-device/facts.rdf";
 //        String filePath = "C:\\Users\\Nevena\\Desktop\\pravna projekat\\nas pravo\\dr-device\\facts.rdf";
-        String filePath = "../../nas pravo/dr-device/facts.rdf";
+        String filePath = "./dr-device/facts.rdf";
         try {
             Path path = Paths.get(filePath);
             Files.createDirectories(path.getParent());
@@ -182,6 +185,7 @@ public class DrDeviceService {
         ArrayList<String> r = new ArrayList<>();
         r.add("min_imprisonment");
         r.add("max_imprisonment");
+        r.add("to_confiscate");
         return r;
     }
 
