@@ -1,0 +1,14 @@
+.money-table {
+    width: 75%;
+}
+.money-table td {
+    text-align: justify;
+    /* make words wrap */
+    word-wrap: break-word;
+
+}
+
+.money-table tr:nth-child(odd) {
+    background-color: #e3d5ca54;
+    /* color: #fff; */
+}

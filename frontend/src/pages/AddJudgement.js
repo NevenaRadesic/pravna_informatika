@@ -257,7 +257,7 @@ function AddJudgement() {
                   </div>
                 </div>
 
-                <table >
+                <table className='money-table'>
                   <tbody>
                     {addedBanknotes.map((banknote, index) => (
                         <tr key={index}>
@@ -272,10 +272,10 @@ function AddJudgement() {
                 <div className='row'>
                   <div className='col-6'>
                   </div>
-                  <div className='col-2' style={{ 'marginTop': '2px' }}>
+                  <div className='col-2' style={{ 'marginTop': '10px' }}>
                     Ukupno (EUR):
                   </div>
-                  <div className='col-1'>
+                  <div className='col-1'  style={{ 'marginTop': '10px' }}>
                     <b style={{ 'fontSize': '2.6vh', }}>{parseFloat(total).toFixed(2)}</b>
                   </div>
                   <div className='col-2'>

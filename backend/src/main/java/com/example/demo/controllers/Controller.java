@@ -33,6 +33,7 @@ public class Controller {
     @PostMapping("/similar")
     public ArrayList<FormData> getSimilarJudgements(@RequestBody FormData data) {
         ArrayList<FormData> cd = App.findSimilarJudgements(data);
+        cd.forEach(c -> c.setSimilarity(Math.max(c.getSimilarity(), 0)));
         return cd;
     }
 
