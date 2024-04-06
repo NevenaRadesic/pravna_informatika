@@ -3,6 +3,7 @@ package com.example.demo.dto;
 import com.example.demo.jcolibri.CaseDescription;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
@@ -11,6 +12,7 @@ import java.time.format.DateTimeFormatter;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 public class FormData {
     // {"court":"privredni-sud-bijelo-polje","judgementNumber":"","judge":"","prosecutor":"","crime":"",
     // "defendant":"","extendedCriminalActivity":"","financialStatus":""}
