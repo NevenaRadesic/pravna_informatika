@@ -70,9 +70,7 @@ public class CsvConnector implements Connector {
 	}
 
 	private boolean convertFromSerbian(String value) {
-		return value.equalsIgnoreCase("da");
-
-
+		return (value.equalsIgnoreCase("da") || value.equalsIgnoreCase("true"));
 	}
 
 	private ArrayList<CounterfeitingType> getCounterfeitingTypeFromString(String value) {
